@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Public Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex h-16 items-center justify-between gap-8">
+<div class="flex items-center gap-2">
+<div class="text-primary size-8">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_319)">
+<path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
+</g>
+<defs>
+<clippath id="clip0_6_319"><rect fill="white" height="48" width="48"></rect></clippath>
+</defs>
+</svg>
+</div>
+<h2 class="text-slate-900 dark:text-white text-xl font-bold tracking-tight">Enlace</h2>
+</div>
+<nav class="hidden md:flex flex-1 justify-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Servicios</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Roadmap</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Resultados</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Contacto</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden sm:flex min-w-[140px] cursor-pointer items-center justify-center rounded-xl h-10 px-4 bg-primary text-white text-sm font-bold transition-all hover:opacity-90 active:scale-95">
+                        Solicitar Auditoría
+                    </button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-primary/20" data-alt="User profile avatar placeholder" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDoaGbh4lxA5DS9Ws-nrVoZ1TICB_oo0ZpdSCKfbJyjjrMN1h69_tnrlg9DsJBjcaRQMrY7csYyCb6QdHEkScPUgN051m2KGEo1rNamJEF38ew3HzBI5mo2H90Rt-s1OO-v_YeDdkD-VN4_84mQn6NmQIF9yZt-MTl60_GadKQHJpfCny6B7Tz9P1WlFRXrYlp_DtHLgLAoNOdyoip16hReAtkEJr1XxU8du9U1SDywq-9S00DIh-9v8r_Nr9s_N9rz8SmZMTIfaGDw");'></div>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-24">
+<!-- Hero Section -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<div class="space-y-4">
+<span class="inline-block px-3 py-1 text-xs font-bold tracking-wider uppercase bg-primary/10 text-primary rounded-full">Marketing de Resultados</span>
+<h1 class="text-slate-900 dark:text-white text-5xl lg:text-7xl font-black leading-[1.1] tracking-tight">
+                        Domina el <span class="text-primary">Mundo Digital</span>
+</h1>
+<p class="text-slate-600 dark:text-slate-400 text-lg lg:text-xl leading-relaxed max-w-xl">
+                        Estrategias SEO y SEM de alto impacto diseñadas para posicionar tu marca en la cima de los resultados de búsqueda y convertir tráfico en ingresos reales.
+                    </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="flex-1 sm:flex-none min-w-[200px] cursor-pointer items-center justify-center rounded-xl h-14 px-8 bg-primary text-white text-base font-bold transition-all hover:shadow-lg hover:shadow-primary/25">
+                        Impulsa tu Tráfico
+                    </button>
+<button class="flex-1 sm:flex-none min-w-[200px] cursor-pointer items-center justify-center rounded-xl h-14 px-8 border-2 border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white text-base font-bold hover:bg-slate-50 dark:hover:bg-slate-800 transition-all">
+                        Ver Resultados
+                    </button>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary/20 rounded-2xl blur-2xl opacity-50 group-hover:opacity-70 transition duration-1000"></div>
+<div class="relative w-full aspect-video bg-cover bg-center rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-800 overflow-hidden" data-alt="Modern analytics dashboard showing website performance metrics" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDmSzthq97Fn_VHGHjqwg539rBMK_CHJDAbjHsi5RbZR83UnxODq-2gQDEbgaFz4xp-bV6inTv6_9uCqV9s-9h78jgSF1_C--VIMtDJ3UkjvcrCRRonun83KJGGk-szI3rCMiOq00SWlTr9V-pYpYI2yFPHUbXyHkKItHgwYAh3ssCX1y2NR326rxvYCC8T7bOtqvIWsgbp_0WAHCpLk5ILueimTLgDwDL1ZykdFAN0jd4p-lllrLgVgLi42-UJ7tQyZPr3PZKiL4yi");'></div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="space-y-12">
+<div class="text-center space-y-4 max-w-3xl mx-auto">
+<h2 class="text-slate-900 dark:text-white text-3xl font-bold tracking-tight">Servicios de Visibilidad de Alto Impacto</h2>
+<p class="text-slate-600 dark:text-slate-400">Soluciones integrales de posicionamiento orgánico y de pago para un crecimiento sostenible.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- SEO On/Off-page -->
+<div class="flex flex-col gap-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-6 hover:border-primary/50 transition-colors group">
+<div class="size-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">search</span>
+</div>
+<div class="space-y-2">
+<h3 class="text-slate-900 dark:text-white text-xl font-bold">SEO On/Off-page</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Optimización técnica profunda y construcción de autoridad de dominio mediante estrategias de linkbuilding ético.</p>
+</div>
+</div>
+<!-- SEM & Paid Ads -->
+<div class="flex flex-col gap-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-6 hover:border-primary/50 transition-colors group">
+<div class="size-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">trending_up</span>
+</div>
+<div class="space-y-2">
+<h3 class="text-slate-900 dark:text-white text-xl font-bold">SEM &amp; Paid Ads</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Gestión de campañas en Google Ads y redes sociales enfocadas 100% en el retorno de inversión y conversión.</p>
+</div>
+</div>
+<!-- Content Strategy -->
+<div class="flex flex-col gap-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-6 hover:border-primary/50 transition-colors group">
+<div class="size-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">article</span>
+</div>
+<div class="space-y-2">
+<h3 class="text-slate-900 dark:text-white text-xl font-bold">Contenido Estratégico</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Creación de piezas de contenido de alto valor que atraen, educan y retienen a tu audiencia objetiva.</p>
+</div>
+</div>
+<!-- Local SEO -->
+<div class="flex flex-col gap-4 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-6 hover:border-primary/50 transition-colors group">
+<div class="size-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">location_on</span>
+</div>
+<div class="space-y-2">
+<h3 class="text-slate-900 dark:text-white text-xl font-bold">SEO Local</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Domina las búsquedas locales y atrae tráfico físico o de proximidad optimizando tu presencia en mapas.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Roadmap Section -->
+<section class="space-y-12">
+<div class="text-center space-y-4 max-w-3xl mx-auto">
+<h2 class="text-slate-900 dark:text-white text-3xl font-bold tracking-tight">Roadmap de Crecimiento Virtual</h2>
+<p class="text-slate-600 dark:text-slate-400">Un proceso de cuatro etapas diseñado para escalar tu presencia digital sin fisuras.</p>
+</div>
+<div class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Line for Desktop -->
+<div class="hidden lg:block absolute top-12 left-0 w-full h-0.5 bg-slate-200 dark:bg-slate-800 -z-10"></div>
+<div class="relative bg-background-light dark:bg-background-dark">
+<div class="size-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl mb-6 shadow-lg shadow-primary/20">1</div>
+<h4 class="text-lg font-bold mb-2">Auditoría &amp; Análisis</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400">Identificamos brechas técnicas, oportunidades de palabras clave y analizamos a tu competencia directa.</p>
+</div>
+<div class="relative bg-background-light dark:bg-background-dark">
+<div class="size-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl mb-6 shadow-lg shadow-primary/20">2</div>
+<h4 class="text-lg font-bold mb-2">Optimización Base</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400">Corrección de errores técnicos de SEO, mejora de velocidad de carga y alineación de mensajes publicitarios.</p>
+</div>
+<div class="relative bg-background-light dark:bg-background-dark">
+<div class="size-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl mb-6 shadow-lg shadow-primary/20">3</div>
+<h4 class="text-lg font-bold mb-2">Ejecución &amp; Escala</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400">Lanzamiento de campañas SEM de alto rendimiento y producción constante de contenido optimizado.</p>
+</div>
+<div class="relative bg-background-light dark:bg-background-dark">
+<div class="size-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl mb-6 shadow-lg shadow-primary/20">4</div>
+<h4 class="text-lg font-bold mb-2">Monitoreo &amp; Mejora</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400">Análisis de datos en tiempo real para refinar estrategias y maximizar el costo por adquisición (CPA).</p>
+</div>
+</div>
+</section>
+<!-- Results Section -->
+<section class="rounded-[2rem] bg-slate-900 text-white overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-2">
+<div class="p-8 lg:p-16 space-y-8">
+<div class="space-y-4">
+<h2 class="text-3xl lg:text-4xl font-bold tracking-tight">Resultados Probados en Generación de Leads</h2>
+<p class="text-slate-400 text-lg">No solo prometemos tráfico, entregamos clientes potenciales listos para convertir.</p>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="space-y-1">
+<span class="text-4xl font-black text-primary">+145%</span>
+<p class="text-sm text-slate-400 uppercase tracking-widest font-bold">Tráfico Orgánico</p>
+</div>
+<div class="space-y-1">
+<span class="text-4xl font-black text-primary">-30%</span>
+<p class="text-sm text-slate-400 uppercase tracking-widest font-bold">Costo por Lead</p>
+</div>
+<div class="space-y-1">
+<span class="text-4xl font-black text-primary">89%</span>
+<p class="text-sm text-slate-400 uppercase tracking-widest font-bold">Tasa de Retención</p>
+</div>
+<div class="space-y-1">
+<span class="text-4xl font-black text-primary">2.4M</span>
+<p class="text-sm text-slate-400 uppercase tracking-widest font-bold">Leads Generados</p>
+</div>
+</div>
+<button class="w-full sm:w-auto px-8 h-14 bg-white text-slate-900 rounded-xl font-bold hover:bg-slate-100 transition-colors">
+                        Ver Casos de Éxito
+                    </button>
+</div>
+<div class="relative min-h-[300px] lg:min-h-full bg-cover bg-center" data-alt="Growth chart showing upward trend in leads and revenue" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCdMi7VZzQYYY5rycRff6Y80y8qU0V7_-Y3MaR54lH69j8MMB2Ef5TRjrxjwWbkt5Uyd_T7hiC0bOroCagAWreeAG6CZdvrT6qxjj288AmDE0ghUpmErD-O-7bXotNqbCDsiAMJYrn_LbAbiwiiL4Y_IjQHlthBTuhPmR_4DT4abIK5pz-ZofonRQFznGJrX9p82Vw9ZvugkRGfy6FJP3VxKxwrQkr_AySygfVa9r1E_Zxi-B_OkypSwk5VSpEnBVR8SHp141dHaAnO");'>
+<div class="absolute inset-0 bg-gradient-to-r from-slate-900 via-transparent to-transparent lg:block hidden"></div>
+</div>
+</div>
+</section>
+<!-- Footer / Contact CTA -->
+<footer class="border-t border-slate-200 dark:border-slate-800 pt-16 pb-8">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-12">
+<div class="space-y-4">
+<div class="flex items-center gap-2">
+<div class="text-primary size-6">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-slate-900 dark:text-white text-xl font-bold tracking-tight">Enlace</h2>
+</div>
+<p class="text-slate-500 max-w-xs text-sm">Elevando marcas locales a horizontes globales a través del posicionamiento inteligente.</p>
+</div>
+<div class="flex gap-4">
+<a class="size-10 rounded-full border border-slate-200 dark:border-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-sm">share</span>
+</a>
+<a class="size-10 rounded-full border border-slate-200 dark:border-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-sm">mail</span>
+</a>
+<a class="size-10 rounded-full border border-slate-200 dark:border-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-sm">call</span>
+</a>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between text-xs text-slate-500 gap-4 border-t border-slate-100 dark:border-slate-900 pt-8">
+<p>© 2024 Enlace Agency. Todos los derechos reservados.</p>
+<div class="flex gap-8">
+<a class="hover:text-primary transition-colors" href="#">Política de Privacidad</a>
+<a class="hover:text-primary transition-colors" href="#">Términos de Servicio</a>
+<a class="hover:text-primary transition-colors" href="#">Aviso Legal</a>
+</div>
+</div>
+</footer>
+</main>
+</body></html>

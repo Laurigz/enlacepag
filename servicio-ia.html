@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Inteligencia Artificial | Enlace Agencia Digital</title>
+    <meta name="description"
+        content="Implementamos soluciones avanzadas de Inteligencia Artificial para optimizar operaciones y potenciar tu empresa." />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
+        rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            theme: { extend: { colors: { "primary": "#002d62" }, fontFamily: { "display": ["Inter", "sans-serif"] } } }
+        }
+    </script>
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .anim {
+            animation: fadeUp .7s ease-out forwards;
+            opacity: 0;
+        }
+
+        .d1 {
+            animation-delay: .1s
+        }
+
+        .d2 {
+            animation-delay: .2s
+        }
+
+        .d3 {
+            animation-delay: .3s
+        }
+
+        .d4 {
+            animation-delay: .4s
+        }
+
+        .d5 {
+            animation-delay: .5s
+        }
+
+        @keyframes ping {
+
+            75%,
+            100% {
+                transform: scale(2);
+                opacity: 0
+            }
+        }
+
+        .animate-ping {
+            animation: ping 1s cubic-bezier(0, 0, .2, 1) infinite;
+        }
+    </style>
+</head>
+
+<body class="bg-transparent text-slate-900 min-h-screen flex flex-col overflow-x-hidden antialiased">
+    <div id="site-nav"></div>
+    <main class="flex-1">
+        <!-- HERO -->
+        <section class="relative px-6 lg:px-20 py-20 lg:py-32 overflow-hidden">
+            <div
+                class="absolute top-0 right-0 w-96 h-96 bg-primary/8 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none">
+            </div>
+            <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+                <div class="z-10 space-y-6">
+                    <div
+                        class="anim d1 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-wider">
+                        <span class="relative flex h-2 w-2"><span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span><span
+                                class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span></span>
+                        Innovación Digital
+                    </div>
+                    <h1
+                        class="anim d2 text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.08] tracking-tighter text-slate-900">
+                        Elevamos tu visión al <span
+                            class="bg-gradient-to-r from-primary to-sky-500 bg-clip-text text-transparent">futuro
+                            digital</span> con IA
+                    </h1>
+                    <p class="anim d3 text-lg text-slate-500 max-w-xl leading-relaxed">Implementamos soluciones
+                        avanzadas de IA diseñadas para optimizar operaciones y potenciar el crecimiento estratégico de
+                        tu empresa.</p>
+                    <div class="anim d4 flex flex-wrap gap-4">
+                        <a href="contacto.html"
+                            class="bg-primary text-white px-8 py-4 rounded-xl font-bold hover:bg-primary/90 hover:scale-105 transition-all shadow-lg shadow-primary/20">Descubrir
+                            Soluciones</a>
+                        <a href="portfolio.html"
+                            class="border-2 border-slate-200 text-slate-900 px-8 py-4 rounded-xl font-bold hover:bg-slate-50 transition-colors">Ver
+                            Casos de Éxito</a>
+                    </div>
+                </div>
+                <div class="anim d5 relative">
+                    <div class="aspect-square rounded-3xl overflow-hidden shadow-2xl relative">
+                        <img class="w-full h-full object-cover"
+                            src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=700&q=80"
+                            alt="IA redes neuronales" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent mix-blend-overlay">
+                        </div>
+                    </div>
+                    <div
+                        class="absolute -bottom-6 -left-6 bg-white p-5 rounded-2xl shadow-xl border border-slate-100 hidden md:flex items-center gap-4">
+                        <div class="bg-primary/10 p-3 rounded-lg"><span
+                                class="material-symbols-outlined text-primary">analytics</span></div>
+                        <div>
+                            <p class="text-xs font-bold text-slate-400 uppercase">Eficiencia</p>
+                            <p class="text-lg font-black text-slate-900">+45% Optimización</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SERVICIOS CORE -->
+        <section class="px-6 lg:px-20 py-20 bg-slate-50">
+            <div class="max-w-6xl mx-auto">
+                <div class="mb-12">
+                    <h2 class="text-3xl lg:text-4xl font-black text-slate-900 mb-3">Nuestros Servicios Core de IA</h2>
+                    <div class="h-1.5 w-20 bg-primary rounded-full"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                    <div
+                        class="group bg-white p-8 rounded-2xl border border-slate-200 hover:border-primary transition-all hover:shadow-xl">
+                        <div
+                            class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-3xl">precision_manufacturing</span></div>
+                        <h3 class="text-xl font-bold mb-3">Automatización</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed">Optimización de procesos repetitivos con
+                            flujos de trabajo inteligentes que liberan el potencial de tu equipo.</p>
+                    </div>
+                    <div
+                        class="group bg-white p-8 rounded-2xl border border-slate-200 hover:border-primary transition-all hover:shadow-xl">
+                        <div
+                            class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-3xl">insights</span></div>
+                        <h3 class="text-xl font-bold mb-3">Análisis de Datos</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed">Transformamos grandes volúmenes de información
+                            en decisiones accionables mediante minería de datos avanzada.</p>
+                    </div>
+                    <div
+                        class="group bg-white p-8 rounded-2xl border border-slate-200 hover:border-primary transition-all hover:shadow-xl">
+                        <div
+                            class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-3xl">forum</span></div>
+                        <h3 class="text-xl font-bold mb-3">Chatbots Inteligentes</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed">Asistentes virtuales con procesamiento de
+                            lenguaje natural para atención al cliente excepcional 24/7.</p>
+                    </div>
+                    <div
+                        class="group bg-white p-8 rounded-2xl border border-slate-200 hover:border-primary transition-all hover:shadow-xl">
+                        <div
+                            class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-3xl">query_stats</span></div>
+                        <h3 class="text-xl font-bold mb-3">Analítica Predictiva</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed">Algoritmos de machine learning para anticipar
+                            tendencias y comportamientos de mercado con precisión.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- METODOLOGÍA -->
+        <section class="px-6 lg:px-20 py-20">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl lg:text-5xl font-black text-slate-900 mb-3">Metodología de Integración</h2>
+                    <p class="text-slate-500 max-w-2xl mx-auto">Un proceso estructurado para garantizar que la IA se
+                        convierta en el motor de tu negocio.</p>
+                </div>
+                <div class="relative grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="hidden md:block absolute top-8 left-0 w-full h-0.5 bg-slate-200 z-0"></div>
+                    <div class="relative z-10 flex flex-col items-center text-center group">
+                        <div
+                            class="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center text-2xl font-black mb-5 border-4 border-white shadow-xl group-hover:scale-110 transition-transform">
+                            1</div>
+                        <h4 class="text-base font-bold mb-1">Auditoría</h4>
+                        <p class="text-sm text-slate-500">Identificamos oportunidades de IA en tus procesos.</p>
+                    </div>
+                    <div class="relative z-10 flex flex-col items-center text-center group">
+                        <div
+                            class="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center text-2xl font-black mb-5 border-4 border-white shadow-xl group-hover:scale-110 transition-transform">
+                            2</div>
+                        <h4 class="text-base font-bold mb-1">Diseño</h4>
+                        <p class="text-sm text-slate-500">Arquitectura personalizada según tus objetivos.</p>
+                    </div>
+                    <div class="relative z-10 flex flex-col items-center text-center group">
+                        <div
+                            class="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center text-2xl font-black mb-5 border-4 border-white shadow-xl group-hover:scale-110 transition-transform">
+                            3</div>
+                        <h4 class="text-base font-bold mb-1">Despliegue</h4>
+                        <p class="text-sm text-slate-500">Integramos IA sin interrumpir tu flujo de trabajo.</p>
+                    </div>
+                    <div class="relative z-10 flex flex-col items-center text-center group">
+                        <div
+                            class="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center text-2xl font-black mb-5 border-4 border-white shadow-xl group-hover:scale-110 transition-transform">
+                            4</div>
+                        <h4 class="text-base font-bold mb-1">Evolución</h4>
+                        <p class="text-sm text-slate-500">Monitoreo y optimización continua de los modelos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- BENEFICIOS / STATS -->
+        <section class="px-6 lg:px-20 py-20 bg-primary text-white overflow-hidden relative">
+            <div class="absolute top-0 right-0 w-1/3 h-full bg-white/5 blur-[120px] rounded-full pointer-events-none">
+            </div>
+            <div class="max-w-6xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl lg:text-5xl font-black mb-8 leading-tight">Beneficios que transforman resultados
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="flex gap-5">
+                            <div class="shrink-0 w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center">
+                                <span class="material-symbols-outlined">bolt</span></div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-1">Agilidad Operativa</h4>
+                                <p class="text-white/75">Reducción drástica en los tiempos de respuesta y ejecución de
+                                    tareas críticas.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-5">
+                            <div class="shrink-0 w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center">
+                                <span class="material-symbols-outlined">trending_up</span></div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-1">Escalabilidad Infinita</h4>
+                                <p class="text-white/75">Sistemas que crecen con tu demanda sin aumentar costos fijos.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-5">
+                            <div class="shrink-0 w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center">
+                                <span class="material-symbols-outlined">verified_user</span></div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-1">Precisión Extrema</h4>
+                                <p class="text-white/75">Minimización del error humano en procesos de datos complejos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div
+                        class="bg-white/10 p-8 rounded-3xl border border-white/10 flex flex-col justify-between aspect-square">
+                        <span class="text-4xl font-black">70%</span>
+                        <p class="text-sm text-white/70">Ahorro en tiempos de soporte técnico</p>
+                    </div>
+                    <div
+                        class="bg-white/10 p-8 rounded-3xl border border-white/10 flex flex-col justify-between aspect-square mt-8">
+                        <span class="text-4xl font-black">3x</span>
+                        <p class="text-sm text-white/70">Incremento en conversión de ventas</p>
+                    </div>
+                    <div
+                        class="bg-white/10 p-8 rounded-3xl border border-white/10 flex flex-col justify-between aspect-square">
+                        <span class="text-4xl font-black">24/7</span>
+                        <p class="text-sm text-white/70">Disponibilidad total de sistemas IA</p>
+                    </div>
+                    <div
+                        class="bg-white/10 p-8 rounded-3xl border border-white/10 flex flex-col justify-between aspect-square mt-8">
+                        <span class="text-4xl font-black">∞</span>
+                        <p class="text-sm text-white/70">Posibilidades de innovación</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA -->
+        <section class="px-6 lg:px-20 py-20">
+            <div
+                class="max-w-4xl mx-auto bg-primary rounded-[2rem] p-12 text-center text-white relative overflow-hidden shadow-2xl shadow-primary/30">
+                <div class="absolute inset-0 bg-gradient-to-br from-black/20 to-transparent"></div>
+                <div class="relative z-10">
+                    <h2 class="text-3xl md:text-5xl font-black mb-6">¿Listo para el siguiente paso?</h2>
+                    <p class="text-xl text-white/80 mb-10">Agendá una consultoría gratuita y descubrí cómo la IA puede
+                        transformar tu empresa hoy mismo.</p>
+                    <a href="contacto.html"
+                        class="inline-block bg-white text-primary px-10 py-4 rounded-xl font-black text-lg hover:bg-slate-50 hover:scale-105 transition-all">Agendar
+                        Consultoría</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-white/50 backdrop-blur-sm border-t border-slate-200/60 py-8 px-6">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-3"><img class="h-8 w-auto" src="ENLACE Logo.svg" alt="Enlace" /><span
+                    class="font-bold text-slate-700">Enlace Agencia Digital</span></div>
+            <div class="flex gap-6 text-sm text-slate-500"><a class="hover:text-primary transition-colors"
+                    href="index.html#servicios">Servicios</a><a class="hover:text-primary transition-colors"
+                    href="#">Privacidad</a></div>
+            <p class="text-sm text-slate-400">© 2024 Enlace. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="navbar.js"></script>
+    <script src="infinite-grid.js"></script>
+<script src="footer.js"></script>`n</body>
+
+</html>

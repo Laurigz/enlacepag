@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -361,42 +361,42 @@
           ¿Pensás que el diseño digital es un "gasto innecesario"?
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div
-            class="flex flex-col items-center text-center gap-6 py-20 px-8 rounded-3xl bg-blue-900/20 backdrop-blur-sm border border-blue-200/50 hover:-translate-y-2 transition-transform duration-300 shadow-xl shadow-blue-900/5 h-full">
+          <a href="servicio-branding.html"
+            class="flex flex-col items-center text-center gap-6 py-20 px-8 rounded-3xl bg-blue-900/20 backdrop-blur-sm border border-blue-200/50 hover:-translate-y-2 transition-transform duration-300 shadow-xl shadow-blue-900/5 h-full cursor-pointer">
             <div class="flex items-center justify-center size-16 rounded-2xl bg-blue-500/10 text-blue-600 mb-2">
               <span class="material-symbols-outlined text-4xl">palette</span>
             </div>
             <h3 class="text-xl font-bold">Branding</h3>
             <p class="text-slate-600 text-sm leading-relaxed">Centrado en la identidad visual y la percepción de tu
               marca en el mercado.</p>
-          </div>
-          <div
-            class="flex flex-col items-center text-center gap-6 py-20 px-8 rounded-3xl bg-purple-900/20 backdrop-blur-sm border border-purple-200/50 hover:-translate-y-2 transition-transform duration-300 shadow-xl shadow-purple-900/5 h-full">
+          </a>
+          <a href="servicio-ia.html"
+            class="flex flex-col items-center text-center gap-6 py-20 px-8 rounded-3xl bg-purple-900/20 backdrop-blur-sm border border-purple-200/50 hover:-translate-y-2 transition-transform duration-300 shadow-xl shadow-purple-900/5 h-full cursor-pointer">
             <div class="flex items-center justify-center size-16 rounded-2xl bg-purple-500/10 text-purple-600 mb-2">
               <span class="material-symbols-outlined text-4xl">smart_toy</span>
             </div>
             <h3 class="text-xl font-bold">Inteligencia ARTIFICIAL</h3>
             <p class="text-slate-600 text-sm leading-relaxed">Centrado en la eficiencia, automatización de procesos y la
               innovación continua.</p>
-          </div>
-          <div
-            class="flex flex-col items-center text-center gap-6 py-20 px-8 rounded-3xl bg-emerald-900/20 backdrop-blur-sm border border-emerald-200/50 hover:-translate-y-2 transition-transform duration-300 shadow-xl shadow-emerald-900/5 h-full">
+          </a>
+          <a href="servicio-web.html"
+            class="flex flex-col items-center text-center gap-6 py-20 px-8 rounded-3xl bg-emerald-900/20 backdrop-blur-sm border border-emerald-200/50 hover:-translate-y-2 transition-transform duration-300 shadow-xl shadow-emerald-900/5 h-full cursor-pointer">
             <div class="flex items-center justify-center size-16 rounded-2xl bg-emerald-500/10 text-emerald-600 mb-2">
               <span class="material-symbols-outlined text-4xl">web</span>
             </div>
             <h3 class="text-xl font-bold">Páginas Web</h3>
             <p class="text-slate-600 text-sm leading-relaxed">Centrado en la conversión, usabilidad y una sólida
               presencia digital 24/7.</p>
-          </div>
-          <div
-            class="flex flex-col items-center text-center gap-6 py-20 px-8 rounded-3xl bg-rose-900/20 backdrop-blur-sm border border-rose-200/50 hover:-translate-y-2 transition-transform duration-300 shadow-xl shadow-rose-900/5 h-full">
+          </a>
+          <a href="servicio-posicionamiento.html"
+            class="flex flex-col items-center text-center gap-6 py-20 px-8 rounded-3xl bg-rose-900/20 backdrop-blur-sm border border-rose-200/50 hover:-translate-y-2 transition-transform duration-300 shadow-xl shadow-rose-900/5 h-full cursor-pointer">
             <div class="flex items-center justify-center size-16 rounded-2xl bg-rose-500/10 text-rose-600 mb-2">
               <span class="material-symbols-outlined text-4xl">troubleshoot</span>
             </div>
             <h3 class="text-xl font-bold">Posicionamiento Virtual</h3>
             <p class="text-slate-600 text-sm leading-relaxed">Centrado en la visibilidad integral, optimización SEO y
               estrategias de alcance.</p>
-          </div>
+          </a>
         </div>
       </div>
     </section>
@@ -707,60 +707,12 @@
   </main>
 
   <!-- Chatbot flotante -->
-  <div class="fixed bottom-6 right-6 z-50 group flex flex-col items-end">
-    <div
-      class="absolute -top-12 right-0 bg-white text-primary text-sm font-bold px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none shadow-lg">
-      ¿Hablamos?
-      <div class="absolute -bottom-1.5 right-6 size-3 bg-white rotate-45 rounded-sm"></div>
-    </div>
-    <button id="chatToggle"
-      class="flex items-center justify-center size-14 rounded-full bg-primary text-white shadow-xl shadow-primary/40 hover:scale-105 hover:bg-primary/90 transition-all cursor-pointer"
-      aria-label="Abrir chat">
-      <span class="material-symbols-outlined text-2xl">chat</span>
-    </button>
-  </div>
 
-  <!-- Chat popup -->
-  <div id="chatBox"
-    class="hidden fixed bottom-24 right-6 z-50 w-80 bg-white/60 backdrop-blur-md rounded-2xl shadow-2xl border border-slate-100 overflow-hidden">
-    <div class="bg-primary p-4 flex items-center justify-between">
-      <div class="flex items-center gap-3">
-        <div class="w-9 h-9 bg-white/60 backdrop-blur-md/20 rounded-full flex items-center justify-center">
-          <span class="material-symbols-outlined text-primary text-lg">smart_toy</span>
-        </div>
-        <div>
-          <p class="text-white font-semibold text-sm">Enlace Assistant</p>
-          <p class="text-white/70 text-xs">● Online ahora</p>
-        </div>
-      </div>
-      <button id="closeChat" class="text-white/70 hover:text-white" aria-label="Cerrar chat">
-        <span class="material-symbols-outlined">close</span>
-      </button>
-    </div>
-    <div id="chatMessages" class="p-4 h-56 overflow-y-auto space-y-3 bg-white/80 backdrop-blur-md">
-      <div class="flex gap-2">
-        <div
-          class="w-7 h-7 bg-primary rounded-full flex items-center justify-center text-white text-xs flex-shrink-0">
-          <span class="material-symbols-outlined text-sm">smart_toy</span>
-        </div>
-        <div
-          class="bg-white/60 backdrop-blur-md rounded-xl rounded-tl-none px-3 py-2 text-sm text-slate-900 shadow-sm max-w-[85%]">
-          ¡Hola! Soy el asistente de Enlace. ¿En qué puedo ayudarte hoy? 👋
-        </div>
-      </div>
-    </div>
-    <div class="p-3 border-t border-slate-100 bg-white/60 backdrop-blur-md flex gap-2">
-      <input id="chatInput" type="text" placeholder="Escribí tu pregunta..."
-        class="flex-1 text-sm px-3 py-2 rounded-lg border border-slate-700 bg-slate-800 text-slate-900 focus:outline-none focus:border-primary" />
-      <button id="chatSend"
-        class="bg-primary text-white px-3 py-2 rounded-lg text-sm font-bold hover:bg-primary/90 transition-colors">→</button>
-    </div>
-  </div>
 
   <script src="main.js"></script>
   <script>
     // Slider
-    const slider = document.getElementById('heroSlider');
+    const slider = doclementById('heroSlider');
     const dots = document.querySelectorAll('.slide-dot');
     let currentSlide = 0;
 
@@ -781,46 +733,7 @@
       document.getElementById('mobileMenu')?.classList.toggle('hidden');
     });
 
-    // Chatbot
-    const chatToggle = document.getElementById('chatToggle');
-    const chatBox = document.getElementById('chatBox');
-    const closeChat = document.getElementById('closeChat');
-    const chatSend = document.getElementById('chatSend');
-    const chatInput = document.getElementById('chatInput');
-    const chatMessages = document.getElementById('chatMessages');
 
-    chatToggle?.addEventListener('click', () => chatBox?.classList.toggle('hidden'));
-    closeChat?.addEventListener('click', () => chatBox?.classList.add('hidden'));
-
-    function addMessage(text, isUser) {
-      const div = document.createElement('div');
-      div.className = 'flex gap-2' + (isUser ? ' justify-end' : '');
-      div.innerHTML = isUser
-        ? `<div class="bg-primary text-white rounded-xl rounded-tr-none px-3 py-2 text-sm max-w-[85%]">${text}</div>`
-        : `<div class="w-7 h-7 bg-primary rounded-full flex items-center justify-center text-white text-xs flex-shrink-0"><span class="material-symbols-outlined text-sm">smart_toy</span></div><div class="bg-white/60 backdrop-blur-md rounded-xl rounded-tl-none px-3 py-2 text-sm text-slate-900 shadow-sm max-w-[85%]">${text}</div>`;
-      chatMessages?.appendChild(div);
-      if (chatMessages) chatMessages.scrollTop = chatMessages.scrollHeight;
-    }
-
-    function getBotReply(msg) {
-      const m = msg.toLowerCase();
-      if (m.includes('precio') || m.includes('costo') || m.includes('plan')) return '¡Tenemos 3 planes! Pack Identidad, Pack Crecimiento y Pack Agencia Integral. Mirá la sección de Precios para más detalles.';
-      if (m.includes('servicio')) return 'Ofrecemos Branding, Inteligencia Artificial, Páginas Web y Posicionamiento. ¿Te interesa alguno en particular?';
-      if (m.includes('contacto') || m.includes('hablar') || m.includes('whatsapp')) return 'Podés contactarnos por WhatsApp desde el botón de arriba o completando nuestro formulario. ¡Respondemos en menos de 24hs!';
-      return 'Eso es una buena pregunta. Te recomendamos solicitar tu auditoría gratuita para que uno de nuestros estrategas te contacte personalmente. 🚀';
-    }
-
-    chatSend?.addEventListener('click', () => {
-      const text = chatInput?.value.trim();
-      if (!text) return;
-      addMessage(text, true);
-      if (chatInput) chatInput.value = '';
-      setTimeout(() => addMessage(getBotReply(text), false), 800);
-    });
-
-    chatInput?.addEventListener('keypress', (e) => {
-      if (e.key === 'Enter') chatSend?.click();
-    });
   </script>
   <script src="navbar.js"></script>
   <!-- Three.js CDN -->
@@ -828,6 +741,7 @@
 
 
   <script src="infinite-grid.js"></script>
+  <script src="footer.js"></script>`n
 </body>
 
 </html>

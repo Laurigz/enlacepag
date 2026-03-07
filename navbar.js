@@ -10,7 +10,7 @@
   /* ------------------------------------------------------------------ */
   const page = window.location.pathname.split("/").pop() || "index.html";
 
-  const LOGO_SVG = `<img class="h-9 w-auto object-contain mix-blend-multiply drop-shadow-sm" src="ENLACE Logo.svg" alt="Enlace Agencia Digital Logo" />`;
+  const LOGO_SVG = `<img class="h-12 w-auto object-contain mix-blend-multiply drop-shadow-sm" src="ENLACE Logo.svg" alt="Enlace Agencia Digital Logo" />`;
 
   // Dropdown tab configs
   const DROPDOWN_TABS = {
@@ -22,18 +22,18 @@
           <div class="flex gap-6">
             <div>
               <h3 class="sdd-section-label">Identidad</h3>
-              <a href="index.html#servicios" class="sdd-link">Branding</a>
-              <a href="index.html#servicios" class="sdd-link">Diseño Visual</a>
+              <a href="servicio-branding.html" class="sdd-link">Branding</a>
+              <a href="servicio-branding.html" class="sdd-link">Diseño Visual</a>
             </div>
             <div>
               <h3 class="sdd-section-label">Web &amp; AI</h3>
-              <a href="index.html#servicios" class="sdd-link">Páginas Web</a>
-              <a href="index.html#servicios" class="sdd-link">Inteligencia Artificial</a>
+              <a href="servicio-web.html" class="sdd-link">Páginas Web</a>
+              <a href="servicio-ia.html" class="sdd-link">Inteligencia Artificial</a>
             </div>
             <div>
               <h3 class="sdd-section-label">Crecimiento</h3>
-              <a href="index.html#servicios" class="sdd-link">Posicionamiento SEO</a>
-              <a href="index.html#servicios" class="sdd-link">Estrategia Digital</a>
+              <a href="servicio-posicionamiento.html" class="sdd-link">Posicionamiento SEO</a>
+              <a href="servicio-posicionamiento.html" class="sdd-link">Estrategia Digital</a>
             </div>
           </div>
           <a href="contacto.html" class="sdd-view-more">
@@ -443,8 +443,12 @@
     const ddId = tab.dataset.dropdown;
     tab.addEventListener("mouseenter", () => openDropdown(ddId, tab));
     tab.addEventListener("click", () => {
-      if (currentDropdown === ddId) closeDropdown();
-      else openDropdown(ddId, tab);
+      if (ddId === 'servicios') window.location.href = 'index.html#servicios';
+      else if (ddId === 'blog') window.location.href = 'blog.html';
+      else {
+        if (currentDropdown === ddId) closeDropdown();
+        else openDropdown(ddId, tab);
+      }
     });
   });
 

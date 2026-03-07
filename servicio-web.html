@@ -1,0 +1,302 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Páginas Web | Enlace Agencia Digital</title>
+    <meta name="description"
+        content="Transformamos tu presencia digital con sitios web que venden 24/7, combinando diseño UX/UI de vanguardia y rendimiento excepcional." />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
+        rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            theme: { extend: { colors: { "primary": "#002d62" }, fontFamily: { "display": ["Inter", "sans-serif"] } } }
+        }
+    </script>
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .anim {
+            animation: fadeUp .7s ease-out forwards;
+            opacity: 0;
+        }
+
+        .d1 {
+            animation-delay: .1s
+        }
+
+        .d2 {
+            animation-delay: .2s
+        }
+
+        .d3 {
+            animation-delay: .3s
+        }
+
+        .d4 {
+            animation-delay: .4s
+        }
+
+        .d5 {
+            animation-delay: .5s
+        }
+    </style>
+</head>
+
+<body class="bg-transparent text-slate-900 min-h-screen flex flex-col overflow-x-hidden antialiased">
+    <div id="site-nav"></div>
+    <main class="flex-1">
+        <!-- HERO -->
+        <section class="relative px-6 lg:px-20 py-20 lg:py-32 overflow-hidden">
+            <div
+                class="absolute top-0 right-0 w-96 h-96 bg-primary/8 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none">
+            </div>
+            <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+                <div class="z-10 flex flex-col gap-6 order-2 lg:order-1">
+                    <div
+                        class="anim d1 inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider w-fit border border-primary/15">
+                        Expertos en Desarrollo Web</div>
+                    <h1
+                        class="anim d2 text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.08] tracking-tighter text-slate-900">
+                        Sitios Web que Venden <span
+                            class="bg-gradient-to-r from-primary to-sky-500 bg-clip-text text-transparent italic">24/7</span>
+                    </h1>
+                    <p class="anim d3 text-lg text-slate-500 max-w-xl leading-relaxed">Transformamos tu presencia
+                        digital con estrategias enfocadas en resultados, combinando diseño UX/UI de vanguardia y
+                        rendimiento excepcional.</p>
+                    <div class="anim d4 flex flex-wrap gap-4">
+                        <a href="contacto.html"
+                            class="bg-primary text-white px-8 py-4 rounded-xl font-bold hover:bg-primary/90 hover:scale-105 transition-all shadow-lg shadow-primary/20">Iniciar
+                            Proyecto</a>
+                        <a href="portfolio.html"
+                            class="border-2 border-slate-200 text-slate-900 px-8 py-4 rounded-xl font-bold hover:bg-slate-50 transition-colors">Ver
+                            Portafolio</a>
+                    </div>
+                </div>
+                <div class="anim d5 order-1 lg:order-2">
+                    <div class="relative aspect-video lg:aspect-square w-full rounded-2xl overflow-hidden shadow-2xl">
+                        <img class="w-full h-full object-cover"
+                            src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=700&q=80"
+                            alt="Escritorio moderno con interfaz web en pantalla" />
+                        <div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ESTRATEGIA EN RESULTADOS -->
+        <section class="px-6 lg:px-20 py-20 bg-slate-50">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-14 space-y-3">
+                    <h2 class="text-3xl lg:text-4xl font-black text-slate-900">Estrategia Enfocada en Resultados</h2>
+                    <p class="text-slate-500 max-w-2xl mx-auto italic">No solo creamos sitios bonitos; construimos
+                        herramientas de crecimiento empresarial.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div
+                        class="p-8 rounded-2xl bg-white border border-slate-200 hover:border-primary/50 transition-colors group">
+                        <div
+                            class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all">
+                            <span class="material-symbols-outlined text-3xl">brush</span></div>
+                        <h3 class="text-xl font-bold mb-3">Diseño UX/UI</h3>
+                        <p class="text-slate-500 leading-relaxed">Interfaces intuitivas diseñadas para guiar al usuario
+                            hacia la conversión y fidelidad de marca.</p>
+                    </div>
+                    <div
+                        class="p-8 rounded-2xl bg-white border border-slate-200 hover:border-primary/50 transition-colors group">
+                        <div
+                            class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all">
+                            <span class="material-symbols-outlined text-3xl">bolt</span></div>
+                        <h3 class="text-xl font-bold mb-3">Velocidad Optimizada</h3>
+                        <p class="text-slate-500 leading-relaxed">Código limpio y arquitectura moderna para una carga
+                            instantánea que mejora tu posicionamiento SEO.</p>
+                    </div>
+                    <div
+                        class="p-8 rounded-2xl bg-white border border-slate-200 hover:border-primary/50 transition-colors group">
+                        <div
+                            class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all">
+                            <span class="material-symbols-outlined text-3xl">smartphone</span></div>
+                        <h3 class="text-xl font-bold mb-3">Mobile First</h3>
+                        <p class="text-slate-500 leading-relaxed">Experiencia perfecta garantizada en todos los
+                            dispositivos. Priorizamos el acceso móvil para captar tu audiencia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SOLUCIONES -->
+        <section class="px-6 lg:px-20 py-20">
+            <div class="max-w-6xl mx-auto">
+                <div class="mb-12">
+                    <h2 class="text-3xl lg:text-4xl font-black text-slate-900 mb-3">Soluciones para cada etapa</h2>
+                    <p class="text-slate-500 text-lg">Desde startups hasta corporativos, adaptamos nuestra tecnología a
+                        tu nivel de crecimiento.</p>
+                </div>
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="group relative overflow-hidden rounded-2xl aspect-[3/4] bg-slate-200">
+                        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-slate-900/90 z-10"></div>
+                        <img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=80"
+                            alt="Landing Pages" />
+                        <div class="absolute bottom-0 left-0 p-4 z-20">
+                            <h4 class="text-white text-lg font-bold mb-1">Landing Pages</h4>
+                            <p class="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity">Para
+                                campañas de marketing de alto impacto.</p>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-2xl aspect-[3/4] bg-slate-200">
+                        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-slate-900/90 z-10"></div>
+                        <img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                            src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&q=80"
+                            alt="E-commerce" />
+                        <div class="absolute bottom-0 left-0 p-4 z-20">
+                            <h4 class="text-white text-lg font-bold mb-1">E-commerce</h4>
+                            <p class="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity">
+                                Plataformas robustas de venta online.</p>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-2xl aspect-[3/4] bg-slate-200">
+                        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-slate-900/90 z-10"></div>
+                        <img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                            src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&q=80"
+                            alt="Portales Corporativos" />
+                        <div class="absolute bottom-0 left-0 p-4 z-20">
+                            <h4 class="text-white text-lg font-bold mb-1">Portales Corporativos</h4>
+                            <p class="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity">
+                                Presencia institucional sólida con gestión de contenidos.</p>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-2xl aspect-[3/4] bg-slate-200">
+                        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-slate-900/90 z-10"></div>
+                        <img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                            src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&q=80"
+                            alt="Custom Apps" />
+                        <div class="absolute bottom-0 left-0 p-4 z-20">
+                            <h4 class="text-white text-lg font-bold mb-1">Custom Apps</h4>
+                            <p class="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity">
+                                Software a medida para digitalizar tus procesos únicos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- TECH STACK -->
+        <section class="px-6 lg:px-20 py-20 bg-slate-900 text-white">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-5">Nuestro Tech Stack</h2>
+                    <p class="text-slate-400 text-lg mb-10 leading-relaxed">Utilizamos las tecnologías más avanzadas
+                        para asegurar que tu sitio no solo se vea bien hoy, sino que sea escalable para el mañana.</p>
+                    <div class="grid grid-cols-2 gap-5">
+                        <div class="flex items-center gap-3">
+                            <div class="w-1.5 h-1.5 rounded-full bg-primary"></div><span
+                                class="text-lg font-medium">React.js</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-1.5 h-1.5 rounded-full bg-primary"></div><span
+                                class="text-lg font-medium">Next.js</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-1.5 h-1.5 rounded-full bg-primary"></div><span
+                                class="text-lg font-medium">Node.js</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-1.5 h-1.5 rounded-full bg-primary"></div><span
+                                class="text-lg font-medium">Tailwind CSS</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-1.5 h-1.5 rounded-full bg-primary"></div><span
+                                class="text-lg font-medium">TypeScript</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-1.5 h-1.5 rounded-full bg-primary"></div><span
+                                class="text-lg font-medium">Headless CMS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-primary/20 blur-3xl rounded-full"></div>
+                    <div class="relative bg-slate-800/50 border border-slate-700 p-8 rounded-3xl backdrop-blur-sm">
+                        <div class="flex items-center gap-4 mb-8">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined">terminal</span></div>
+                            <div>
+                                <h4 class="font-bold">Código de alto rendimiento</h4>
+                                <p class="text-sm text-slate-400">Optimizado para Core Web Vitals</p>
+                            </div>
+                        </div>
+                        <div class="space-y-3 font-mono text-sm text-slate-400">
+                            <div class="flex gap-4"><span class="text-primary">01</span>
+                                <p>const enlaceApp = async () => {</p>
+                            </div>
+                            <div class="flex gap-4"><span class="text-primary">02</span>
+                                <p class="pl-4">await optimizePerformance();</p>
+                            </div>
+                            <div class="flex gap-4"><span class="text-primary">03</span>
+                                <p class="pl-4">await deliverResults();</p>
+                            </div>
+                            <div class="flex gap-4"><span class="text-primary">04</span>
+                                <p>}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA -->
+        <section class="px-6 lg:px-20 py-20">
+            <div
+                class="max-w-5xl mx-auto text-center bg-primary rounded-[2rem] py-16 px-8 relative overflow-hidden shadow-2xl shadow-primary/40">
+                <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-black/10 rounded-full blur-3xl"></div>
+                <div class="relative z-10">
+                    <h2 class="text-3xl lg:text-5xl font-black text-white mb-5">¿Listo para transformar tu negocio?</h2>
+                    <p class="text-white/80 text-lg mb-10 max-w-2xl mx-auto">Hablemos de tu próximo proyecto. Nuestro
+                        equipo está listo para llevar tu visión al siguiente nivel digital.</p>
+                    <a href="contacto.html"
+                        class="inline-block bg-white text-primary px-10 py-4 rounded-xl text-xl font-bold hover:bg-slate-50 transition-colors shadow-lg">Agendar
+                        Consultoría Gratis</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-white/50 backdrop-blur-sm border-t border-slate-200/60 py-8 px-6">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-3"><img class="h-8 w-auto" src="ENLACE Logo.svg" alt="Enlace" /><span
+                    class="font-bold text-slate-700">Enlace Agencia Digital</span></div>
+            <div class="flex gap-6 text-sm text-slate-500"><a class="hover:text-primary transition-colors"
+                    href="index.html#servicios">Servicios</a><a class="hover:text-primary transition-colors"
+                    href="#">Privacidad</a></div>
+            <p class="text-sm text-slate-400">© 2024 Enlace. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="navbar.js"></script>
+    <script src="infinite-grid.js"></script>
+<script src="footer.js"></script>`n</body>
+
+</html>

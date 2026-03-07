@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -48,7 +48,8 @@
                         <span
                             class="inline-block px-3 py-1 bg-primary text-white text-xs font-bold tracking-wider uppercase rounded-full mb-4">Estrategia
                             Digital</span>
-                        <h1 class="text-3xl md:text-5xl font-black text-slate-900 leading-tight mb-4 max-w-3xl">El Futuro de
+                        <h1 class="text-3xl md:text-5xl font-black text-slate-900 leading-tight mb-4 max-w-3xl">El
+                            Futuro de
                             la Estrategia Digital en 2024</h1>
                         <p class="text-slate-600 text-lg md:text-xl max-w-2xl mb-8 font-light">Descubre cómo las nuevas
                             tecnologías, la IA generativa y el análisis predictivo están transformando el panorama del
@@ -262,7 +263,8 @@
                         <div class="relative z-10 flex flex-col items-center text-center">
                             <div
                                 class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-4 backdrop-blur-md">
-                                <span class="material-symbols-outlined text-slate-900">mail</span></div>
+                                <span class="material-symbols-outlined text-slate-900">mail</span>
+                            </div>
                             <h3 class="text-xl font-bold mb-2">Mantente Actualizado</h3>
                             <p class="text-blue-100 text-sm mb-6">Recibe los mejores insights y estrategias directo en
                                 tu bandeja de entrada.</p>
@@ -303,55 +305,13 @@
         </div>
     </footer>
 
-    <!-- Chatbot -->
-    <button id="chatToggle"
-        class="fixed bottom-6 right-6 w-14 h-14 bg-primary hover:bg-primary/90 text-white rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-105 z-50"><span
-            class="material-symbols-outlined text-[28px]">chat</span></button>
-    <div id="chatBox"
-        class="hidden fixed bottom-24 right-6 z-50 w-80 bg-white rounded-2xl shadow-2xl border border-slate-100 overflow-hidden">
-        <div class="bg-primary p-4 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <div class="w-9 h-9 bg-white/20 rounded-full flex items-center justify-center"><span
-                        class="material-symbols-outlined text-primary text-lg">smart_toy</span></div>
-                <div>
-                    <p class="text-white font-semibold text-sm">Enlace Assistant</p>
-                    <p class="text-white/70 text-xs">● Online ahora</p>
-                </div>
-            </div>
-            <button id="closeChat" class="text-white/70 hover:text-white"><span
-                    class="material-symbols-outlined">close</span></button>
-        </div>
-        <div id="chatMessages" class="p-4 h-48 overflow-y-auto space-y-3 bg-slate-50">
-            <div class="flex gap-2">
-                <div class="w-7 h-7 bg-primary rounded-full flex items-center justify-center flex-shrink-0"><span
-                        class="material-symbols-outlined text-slate-900 text-sm">smart_toy</span></div>
-                <div class="bg-white rounded-xl rounded-tl-none px-3 py-2 text-sm shadow-sm">¡Hola! ¿Buscás artículos
-                    sobre algún tema en particular? 📖</div>
-            </div>
-        </div>
-        <div class="p-3 border-t border-slate-100 bg-white flex gap-2">
-            <input id="chatInput" type="text" placeholder="Escribí tu pregunta..."
-                class="flex-1 text-sm px-3 py-2 rounded-lg border border-slate-200 focus:outline-none focus:border-primary" />
-            <button id="chatSend" class="bg-primary text-white px-3 py-2 rounded-lg text-sm font-bold">→</button>
-        </div>
-    </div>
-
     <script>
         document.getElementById('menuBtn')?.addEventListener('click', () => document.getElementById('mobileMenu')?.classList.toggle('hidden'));
-        document.getElementById('chatToggle')?.addEventListener('click', () => document.getElementById('chatBox')?.classList.toggle('hidden'));
-        document.getElementById('closeChat')?.addEventListener('click', () => document.getElementById('chatBox')?.classList.add('hidden'));
-        const cm = document.getElementById('chatMessages');
-        document.getElementById('chatSend')?.addEventListener('click', () => {
-            const v = document.getElementById('chatInput')?.value.trim(); if (!v) return;
-            const d = document.createElement('div'); d.className = 'flex gap-2 justify-end';
-            d.innerHTML = `<div class="bg-primary text-white rounded-xl rounded-tr-none px-3 py-2 text-sm">${v}</div>`;
-            cm.appendChild(d); document.getElementById('chatInput').value = '';
-            setTimeout(() => { const d2 = document.createElement('div'); d2.className = 'flex gap-2'; d2.innerHTML = '<div class="bg-white rounded-xl rounded-tl-none px-3 py-2 text-sm shadow-sm">¡Gracias! Te recomendamos empezar por los artículos de Estrategia Digital. 🚀</div>'; cm.appendChild(d2); cm.scrollTop = cm.scrollHeight; }, 800);
-            cm.scrollTop = cm.scrollHeight;
-        });
+
     </script>
-  <script src="navbar.js"></script>
-  <script src="infinite-grid.js"></script>
+    <script src="navbar.js"></script>
+    <script src="infinite-grid.js"></script>
+    <script src="footer.js"></script>`n
 </body>
 
 </html>
