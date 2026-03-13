@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -12,6 +12,7 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/index.css">
   <script id="tailwind-config">
     tailwind.config = {
       theme: {
@@ -354,6 +355,42 @@
       </div>
     </section>
 
+    <!-- INTERACTIVE ACCORDION (Integrated Native Fallback) -->
+    <section id="soluciones-ia" class="relative px-4 py-16 max-w-7xl mx-auto w-full z-20">
+      <div class="bg-white/60 backdrop-blur-xl rounded-[2.5rem] border border-white/60 shadow-2xl p-6 md:p-12 mb-8">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+
+          <!-- Left Side: Text Content -->
+          <div class="w-full lg:w-5/12 text-center lg:text-left">
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 leading-[1.1] tracking-tighter">
+              Soluciones IA<br>a <span class="text-primary">Tu Medida</span>
+            </h2>
+            <p class="mt-6 text-lg text-slate-600 font-medium leading-relaxed max-w-xl mx-auto lg:mx-0">
+              Implementá IA de alto rendimiento en tu negocio sin complicaciones tecnológicas. Potenciá tus procesos con
+              asistentes de voz, chatbots locales y visión artificial avanzada.
+            </p>
+            <div class="mt-8 flex justify-center lg:justify-start">
+              <a href="#contacto"
+                class="inline-flex items-center justify-center gap-2 bg-slate-900 text-white font-bold px-8 py-4 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:bg-primary transition-all duration-300 hover:-translate-y-1">
+                Implementar ahora
+                <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Side: Image Accordion -->
+          <div class="w-full lg:w-7/12 flex justify-center lg:justify-end">
+            <!-- JS will inject the accordion items here -->
+            <div
+              class="flex flex-row items-center justify-center gap-2 md:gap-4 overflow-x-auto py-4 hide-scrollbar w-full max-w-full"
+              id="react-accordion-container">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- SERVICIOS -->
     <section id="servicios" class="relative px-4 py-24">
       <div class="max-w-6xl mx-auto flex flex-col gap-16">
@@ -465,206 +502,26 @@
       </div>
     </section>
 
-    <!-- PRECIOS -->
-    <section id="precios" class="px-4 py-20">
-      <div class="max-w-6xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-black leading-tight tracking-tight text-center mb-16">
-          ¿Cómo ordenamos tu presencia digital?
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
-          <!-- Plan 1 -->
-          <div
-            class="flex flex-col p-8 rounded-2xl bg-white/60 backdrop-blur-md border border-slate-700 shadow-sm hover:shadow-md transition-shadow">
-            <h3 class="text-xl font-bold mb-2">Pack Identidad Local</h3>
-            <div class="text-3xl font-black mb-6">Desde $X</div>
-            <ul class="flex flex-col gap-4 flex-1 mb-8 text-slate-600">
-              <li class="flex items-center gap-3">
-                <span class="material-symbols-outlined text-primary">check_circle</span>
-                <span>Optimización Google Maps</span>
-              </li>
-              <li class="flex items-center gap-3">
-                <span class="material-symbols-outlined text-primary">check_circle</span>
-                <span>Diseño de Logo Básico</span>
-              </li>
-              <li class="flex items-center gap-3">
-                <span class="material-symbols-outlined text-primary">check_circle</span>
-                <span>Paleta de Colores</span>
-              </li>
-            </ul>
-            <button
-              class="w-full py-3 rounded-lg border-2 border-primary text-primary font-bold hover:bg-primary hover:text-white transition-colors">
-              Quiero el Pack Identidad
-            </button>
-          </div>
 
-          <!-- Plan 2 (mas popular) -->
-          <div
-            class="flex flex-col p-8 rounded-2xl bg-white/60 backdrop-blur-md border-2 border-primary shadow-xl relative md:-translate-y-4">
-            <div
-              class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-sm font-bold whitespace-nowrap">
-              El más elegido
-            </div>
-            <h3 class="text-xl font-bold mb-2">Pack Crecimiento Digital</h3>
-            <div class="text-3xl font-black mb-6">Desde $X</div>
-            <ul class="flex flex-col gap-4 flex-1 mb-8 text-slate-600">
-              <li class="flex items-center gap-3">
-                <span class="material-symbols-outlined text-primary">check_circle</span>
-                <span>Todo lo del Pack Local</span>
-              </li>
-              <li class="flex items-center gap-3">
-                <span class="material-symbols-outlined text-primary">check_circle</span>
-                <span>Diseño Web Landing Page</span>
-              </li>
-              <li class="flex items-center gap-3">
-                <span class="material-symbols-outlined text-primary">check_circle</span>
-                <span>Plantillas para Instagram</span>
-              </li>
-              <li class="flex items-center gap-3">
-                <span class="material-symbols-outlined text-primary">check_circle</span>
-                <span>Copywriting Básico</span>
-              </li>
-            </ul>
-            <button
-              class="w-full py-3 rounded-lg bg-primary text-white font-bold hover:bg-primary/90 transition-colors shadow-md shadow-primary/30">
-              Quiero el Pack Crecimiento
-            </button>
-          </div>
+    <!-- PRICING SECTION (React) -->
+    <div id="pricing-root"></div>
+    <script type="module">
+      import React from 'react';
+      import ReactDOM from 'react-dom/client';
+      import { PricingSectionDemo } from './components/ui/demo';
+      import './index.css';
 
-          <!-- Plan 3 -->
-          <div
-            class="flex flex-col p-8 rounded-2xl bg-white/60 backdrop-blur-md border border-slate-700 shadow-sm hover:shadow-md transition-shadow">
-            <h3 class="text-xl font-bold mb-2">Pack Agencia Integral</h3>
-            <div class="text-3xl font-black mb-6">Desde $X</div>
-            <ul class="flex flex-col gap-4 flex-1 mb-8 text-slate-600">
-              <li class="flex items-center gap-3">
-                <span class="material-symbols-outlined text-primary">check_circle</span>
-                <span>Todo lo del Pack Crecimiento</span>
-              </li>
-              <li class="flex items-center gap-3">
-                <span class="material-symbols-outlined text-primary">check_circle</span>
-                <span>E-commerce Completo</span>
-              </li>
-              <li class="flex items-center gap-3">
-                <span class="material-symbols-outlined text-primary">check_circle</span>
-                <span>Gestión de Pauta (Ads)</span>
-              </li>
-              <li class="flex items-center gap-3">
-                <span class="material-symbols-outlined text-primary">check_circle</span>
-                <span>Soporte Prioritario</span>
-              </li>
-            </ul>
-            <button
-              class="w-full py-3 rounded-lg border-2 border-primary text-primary font-bold hover:bg-primary hover:text-white transition-colors">
-              Quiero el Pack Integral
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
+      const rootEl = document.getElementById('pricing-root');
+      if (rootEl) {
+        ReactDOM.createRoot(rootEl).render(
+          React.createElement(React.StrictMode, null, 
+            React.createElement(PricingSectionDemo, null)
+          )
+        );
+      }
+    </script>
 
-    <!-- NOSOTROS -->
-    <section id="nosotros" class="px-4 py-24">
-      <div class="max-w-6xl mx-auto">
-        <!-- Full-width team photo -->
-        <div class="w-full rounded-2xl overflow-hidden mb-20 relative" style="height: 360px;">
-          <img
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBliOTaYehT4jSKadshBqDY-1xxCl7AM-ofdQAfZPIEv9uWuYL4W1Ti9TXdUP_mfUj-805P6BaFoTuTptLdsKJKskpbfO5Cf5tFvAghbbxF1-E3ox-Dwwsx5QgbEIf_nKedXujlBbb7Zk9NETBOdoalxdyo2wnj2Ga9TrEkYlMQSJLKHJBU7jp87Y9PsPsvFBvGoxY1OIz39rMOxSYiHkNlr_2rxIlTzv8la6TWMYJHl98p9HTqUItLGfCFpBuJ5cgmspKo9vtqV24M"
-            alt="Equipo Enlace" class="w-full h-full object-cover" />
-          <div class="absolute inset-0 bg-white/70 flex items-center justify-center">
-            <h2 class="text-slate-900 text-4xl md:text-6xl font-black text-center leading-tight">Sudamos la camiseta por
-              tu
-              marca.</h2>
-          </div>
-        </div>
 
-        <!-- Philosophy -->
-        <div class="text-center max-w-3xl mx-auto mb-20">
-          <p class="text-primary font-bold text-sm tracking-widest uppercase mb-4">NUESTRA FILOSOFÍA</p>
-          <h2 class="text-4xl font-black mb-6">Enlace significa conectar.</h2>
-          <p class="text-slate-600 text-lg leading-relaxed">
-            Creemos en el poder de conectar marcas con su audiencia a través del diseño innovador y la tecnología de
-            vanguardia. Nuestro equipo se sumerge en tu visión, sudando la camiseta para construir experiencias
-            digitales que resuenan y perduran. Hacemos el trabajo duro para que tu marca brille.
-          </p>
-        </div>
-
-        <!-- Team -->
-        <div class="mb-20">
-          <h2 class="text-3xl md:text-4xl font-black text-center mb-4">Nuestro Equipo</h2>
-          <p class="text-slate-500 text-center mb-12">Los talentos detrás de las ideas.</p>
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div class="flex flex-col items-center text-left">
-              <div class="w-full aspect-square rounded-2xl overflow-hidden mb-4 bg-slate-200">
-                <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1KR2vWzmMS1U_PvS493Q6JwPQcgpz-rs4DyM2s_sjgdyCLAmU0Cj0Ej3yW18a4mh5GO1G2Spk9Ig7YKREXK0EzLnrZYruyEJP_s-rPy-0wa_yCYMrsCA3SdV-9F6iZpE5qqiooVgOibFg6plM-LtWwMZMGKgxY6QDk7CDGQTI3kuvSe9U-YG-SDkB6SeHs1J3SBVrFOyGBvfqg9PfNUSe7tUldiG2BiY3LPGTJpweND6Nby-rcf6hRPpf3WBd7xcwlewSxH_UxfVa"
-                  alt="Laura Gómez" class="w-full h-full object-cover" />
-              </div>
-              <h4 class="font-bold text-slate-900">Laura Gómez</h4>
-              <p class="text-primary text-sm font-medium">Directora Creativa</p>
-            </div>
-            <div class="flex flex-col items-center text-left">
-              <div class="w-full aspect-square rounded-2xl overflow-hidden mb-4 bg-slate-200">
-                <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoirfhErAVKJcK2GWxXOvhzAu3zVHgIcXgTB-Mvx7ROritKqxDAD7dWlXf64uMvANPqNKl6VmrQVW-3Jsqz83nsoy-4Zbj6-wiFVM7hwXru3mwe-4RJ7250Z6J4UuQrHD5GltddcFPoIXeEKERbstkt-6iz2au8KtoKYf0L46fddIYtFwMcrpUkLr5dkOuHRQEoQpKrejZ4Qtv0W6WHWWhg5m2EU5KhXFj6Du8ZhPc1BBnb8MpPdEU1gW_xyitJYZnl5A9DTjNMs2E"
-                  alt="Carlos Ruiz" class="w-full h-full object-cover" />
-              </div>
-              <h4 class="font-bold text-slate-900">Carlos Ruiz</h4>
-              <p class="text-primary text-sm font-medium">Tech Lead</p>
-            </div>
-            <div class="flex flex-col items-center text-left">
-              <div class="w-full aspect-square rounded-2xl overflow-hidden mb-4 bg-slate-200">
-                <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4CHKdElfyn4BoVNhY_8e6iwCzS9hqXeS5F3FQaaYNHLOCBqK9uf4vg1wr3LaehrybcD7siTX58b1-15Ny3yLImmiQRtHz_BeFReZaLZxY1yTSg5FPJ1DfV5lGUXzfo3TfGxFoXGnPA9dx08jV0A-KLVpU-7rNLxweBDydVkhkM2Y0Sd2nmveCHmz0sqr-6touCcUSnIyoT5n3j2e_qtLRx6eahpfrTk67MTPsqC9D-8A6gfJ3FBo2u60V0I9w0imcJkbbfMvor8Hh"
-                  alt="Ana Martínez" class="w-full h-full object-cover" />
-              </div>
-              <h4 class="font-bold text-slate-900">Ana Martínez</h4>
-              <p class="text-primary text-sm font-medium">UX/UI Designer</p>
-            </div>
-            <div class="flex flex-col items-center text-left">
-              <div
-                class="w-full aspect-square rounded-2xl overflow-hidden mb-4 bg-slate-200 flex items-center justify-center">
-                <div class="text-center p-4">
-                  <p class="text-slate-500 text-xs">Estratega Digital</p>
-                </div>
-              </div>
-              <h4 class="font-bold text-slate-900">David Silva</h4>
-              <p class="text-primary text-sm font-medium">Estratega Digital</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Values -->
-        <div>
-          <h2 class="text-3xl md:text-4xl font-black text-center mb-12">Nuestros Valores</h2>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-            <div class="flex flex-col items-center gap-4">
-              <div class="flex items-center justify-center size-16 rounded-full bg-blue-100 text-primary">
-                <span class="material-symbols-outlined text-3xl">local_fire_department</span>
-              </div>
-              <h4 class="text-xl font-bold">Dedicación</h4>
-              <p class="text-slate-600 text-sm leading-relaxed">Nos involucramos al 100% en cada proyecto, tratando tu
-                marca como si fuera la nuestra.</p>
-            </div>
-            <div class="flex flex-col items-center gap-4">
-              <div class="flex items-center justify-center size-16 rounded-full bg-blue-100 text-primary">
-                <span class="material-symbols-outlined text-3xl">lightbulb</span>
-              </div>
-              <h4 class="text-xl font-bold">Innovación</h4>
-              <p class="text-slate-600 text-sm leading-relaxed">Buscamos constantemente nuevas formas de resolver
-                problemas y destacar en el mundo digital.</p>
-            </div>
-            <div class="flex flex-col items-center gap-4">
-              <div class="flex items-center justify-center size-16 rounded-full bg-blue-100 text-primary">
-                <span class="material-symbols-outlined text-3xl">visibility</span>
-              </div>
-              <h4 class="text-xl font-bold">Transparencia</h4>
-              <p class="text-slate-600 text-sm leading-relaxed">Comunicación clara y honesta en cada etapa del proceso,
-                construyendo relaciones de confianza.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- CONTACTO / FOOTER CTA -->
     <section id="contacto">
