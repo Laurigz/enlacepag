@@ -32,21 +32,21 @@
       .enlace-footer__tape-left, .enlace-footer__tape-right { display:block; }
     }
     .enlace-footer__brand a { font-size:1.35rem; font-weight:900; color:#0a0a0a; text-decoration:none; display:flex; align-items:center; gap:0.5rem; }
-    .enlace-footer__brand a:hover { color:#002d62; }
+    .enlace-footer__brand a:hover { color:#0034d3; }
     .enlace-footer__brand p { color:#555; font-size:0.85rem; max-width:22rem; margin-top:0.4rem; line-height:1.5; }
     .enlace-footer__cols { display:flex; flex-direction:column; gap:1.5rem; }
     @media(min-width:640px){ .enlace-footer__cols { flex-direction:row; gap:3rem; } }
     .enlace-footer__col h4 { text-transform:uppercase; font-size:0.7rem; font-weight:700; color:#999; letter-spacing:.08em; margin-bottom:0.75rem; }
     .enlace-footer__col a { display:block; color:#555; font-size:0.85rem; font-weight:500; text-decoration:none; margin-bottom:0.4rem; white-space:nowrap; transition:color .2s; }
-    .enlace-footer__col a:hover { color:#002d62; }
+    .enlace-footer__col a:hover { color:#0034d3; }
     .enlace-footer__col .soon { display:inline-flex; font-size:0.65rem; background:#f2f2f2; border-radius:99px; padding:1px 8px; margin-left:5px; transform:rotate(-2deg); }
     .enlace-footer__bottom { max-width:68rem; margin:0.75rem auto 0; padding:0 1rem; display:flex; flex-direction:column; gap:0.75rem; font-size:0.8rem; color:#888; }
     @media(min-width:768px){ .enlace-footer__bottom { flex-direction:row; justify-content:space-between; align-items:center; padding:0 2rem; } }
     .enlace-footer__bottom a { color:#888; text-decoration:none; transition:color .2s; }
-    .enlace-footer__bottom a:hover { color:#002d62; }
+    .enlace-footer__bottom a:hover { color:#0034d3; }
     .enlace-footer__socials { display:flex; gap:1rem; align-items:center; }
     .enlace-footer__socials a { color:#888; display:flex; align-items:center; transition:color .2s; }
-    .enlace-footer__socials a:hover { color:#002d62; }
+    .enlace-footer__socials a:hover { color:#0034d3; }
   </style>
 
   <footer class="enlace-footer">
@@ -56,8 +56,7 @@
 
       <div class="enlace-footer__brand">
         <a href="index.html">
-          <img src="ENLACE Logo.svg" alt="Enlace" style="height:36px;width:auto;" onerror="this.style.display='none'"/>
-          Enlace
+          <img src="logo-enlace.png" alt="Enlace" style="height:36px;width:auto;" onerror="this.style.display='none'"/>
         </a>
         <p>Agencia digital especializada en branding, desarrollo web, inteligencia artificial y posicionamiento SEO.</p>
       </div>

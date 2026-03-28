@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -15,7 +15,7 @@
         rel="stylesheet" />
     <script>
         tailwind.config = {
-            theme: { extend: { colors: { "primary": "#002d62" }, fontFamily: { "display": ["Inter", "sans-serif"] } } }
+            theme: { extend: { colors: { "primary": "#0034d3" }, fontFamily: { "display": ["Inter", "sans-serif"] } } }
         }
     </script>
     <style>
@@ -83,6 +83,14 @@
 </head>
 
 <body class="bg-transparent text-slate-900 min-h-screen flex flex-col overflow-x-hidden antialiased">
+    <!-- Gradient Background Blobs -->
+    <div style="position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;background:linear-gradient(60deg,#f0f4ff 0%,#f8faff 50%,#f5f0ff 100%)">
+      <div style="position:absolute;top:-5%;left:-8%;width:45%;height:45%;border-radius:50%;background:#0034d3;filter:blur(140px);opacity:0.12"></div>
+      <div style="position:absolute;top:15%;right:-5%;width:35%;height:35%;border-radius:50%;background:#99ccff;filter:blur(120px);opacity:0.25"></div>
+      <div style="position:absolute;top:50%;left:-5%;width:30%;height:30%;border-radius:50%;background:#003087;filter:blur(130px);opacity:0.08"></div>
+      <div style="position:absolute;top:60%;right:10%;width:40%;height:40%;border-radius:50%;background:#0034d3;filter:blur(150px);opacity:0.10"></div>
+      <div style="position:absolute;bottom:-10%;left:15%;width:55%;height:40%;border-radius:50%;background:linear-gradient(50deg,#0034d3,#99ccff);filter:blur(140px);opacity:0.12"></div>
+    </div>
     <div id="site-nav"></div>
     <main class="flex-1">
         <!-- HERO -->
@@ -282,7 +290,7 @@
                     </div>
                     <div
                         class="bg-white/10 p-8 rounded-3xl border border-white/10 flex flex-col justify-between aspect-square mt-8">
-                        <span class="text-4xl font-black">∞</span>
+                        <span class="text-4xl font-black">8</span>
                         <p class="text-sm text-white/70">Posibilidades de innovación</p>
                     </div>
                 </div>
@@ -306,7 +314,7 @@
     </main>
     <footer class="bg-white/50 backdrop-blur-sm border-t border-slate-200/60 py-8 px-6">
         <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-            <div class="flex items-center gap-3"><img class="h-8 w-auto" src="ENLACE Logo.svg" alt="Enlace" /><span
+            <div class="flex items-center gap-3"><img class="h-8 w-auto" src="logo-enlace.png" alt="Enlace" /><span
                     class="font-bold text-slate-700">Enlace Agencia Digital</span></div>
             <div class="flex gap-6 text-sm text-slate-500"><a class="hover:text-primary transition-colors"
                     href="index.html#servicios">Servicios</a><a class="hover:text-primary transition-colors"
@@ -316,6 +324,9 @@
     </footer>
     <script src="navbar.js"></script>
     <script src="infinite-grid.js"></script>
-<script src="footer.js"></script>`n</body>
+<script src="footer.js"></script>`n    <script src="/chatbot.js"></script>
+</body>
 
 </html>
+
+

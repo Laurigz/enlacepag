@@ -36,10 +36,11 @@ function AccordionItem({ item, isActive, onMouseEnter }: { item: any; isActive: 
   return (
     <div
       className={cn(
-        "relative h-[450px] rounded-2xl overflow-hidden cursor-pointer transition-all duration-700 ease-in-out",
-        isActive ? "w-[400px]" : "w-[60px]"
+        "relative h-[350px] md:h-[450px] rounded-2xl overflow-hidden cursor-pointer transition-all duration-700 ease-in-out shrink-0",
+        isActive ? "w-[260px] md:w-[400px]" : "w-[60px]"
       )}
       onMouseEnter={onMouseEnter}
+      onClick={onMouseEnter}
     >
       <img
         src={item.imageUrl}
@@ -90,7 +91,7 @@ export function SolucionesIA() {
           </div>
 
           {/* Right Side: Image Accordion */}
-          <div className="w-full lg:w-7/12 flex flex-row items-center justify-center gap-2 md:gap-4 overflow-x-auto py-4 hide-scrollbar">
+          <div className="w-full lg:w-7/12 flex flex-row items-center justify-start lg:justify-center gap-2 md:gap-4 overflow-x-auto py-4 hide-scrollbar">
             {accordionItems.map((item, index) => (
               <AccordionItem
                 key={item.id}

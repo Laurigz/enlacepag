@@ -5,12 +5,12 @@ import { PricingSection } from "@/components/ui/pricing-section"
 
 const defaultTiers = [
   {
-    name: "Starter",
+    name: "PRINCIPIANTE",
     price: {
-      monthly: 15,
-      yearly: 144,
+      monthly: 25000,
+      yearly: 250000,
     },
-    description: "Perfect for individuals and small projects",
+    description: "Identidad Local. Ideal para: Negocios micro",
     icon: (
       <div className="relative">
         <div className="absolute inset-0 bg-gradient-to-r from-gray-500/30 to-gray-500/30 blur-2xl rounded-full" />
@@ -19,36 +19,31 @@ const defaultTiers = [
     ),
     features: [
       {
-        name: "Basic Analytics",
-        description: "Track essential metrics and user behavior",
+        name: "Google Maps",
+        description: "Optimización de perfil en Google Maps.",
         included: true,
       },
       {
-        name: "5 Team Members",
-        description: "Collaborate with a small team",
+        name: "WhatsApp Business",
+        description: "Configuración y diseño para WhatsApp Business.",
         included: true,
       },
       {
-        name: "Basic Support",
-        description: "Email support with 24h response time",
+        name: "Diseño Gráfico Básico",
+        description: "Diseño gráfico básico de marca (Logotipo/Paleta).",
         included: true,
-      },
-      {
-        name: "API Access",
-        description: "Limited API access for basic integrations",
-        included: false,
       },
     ],
   },
   {
-    name: "Pro",
+    name: "Avanzado",
     price: {
-      monthly: 49,
-      yearly: 470,
+      monthly: 49000,
+      yearly: 490000,
     },
-    description: "Ideal for growing teams and businesses",
+    description: "Crecimiento Digital",
     highlight: true,
-    badge: "Most Popular",
+    badge: "MÁS POPULAR",
     icon: (
       <div className="relative">
         <ArrowDownToDot className="w-7 h-7 relative z-10" />
@@ -56,23 +51,23 @@ const defaultTiers = [
     ),
     features: [
       {
-        name: "Advanced Analytics",
-        description: "Deep insights and custom reports",
+        name: "Diseño Web Premium",
+        description: "Landing Page o sitio de hasta 5 secciones.",
         included: true,
       },
       {
-        name: "Unlimited Team Members",
-        description: "Scale your team without limits",
+        name: "Branding",
+        description: "Branding y ecosistema visual.",
         included: true,
       },
       {
-        name: "Priority Support",
-        description: "24/7 priority email and chat support",
+        name: "Redes Sociales",
+        description: "Integración de redes sociales.",
         included: true,
       },
       {
-        name: "Full API Access",
-        description: "Complete API access with higher rate limits",
+        name: "SEO Básico",
+        description: "SEO básico para que los encuentren en Google.",
         included: true,
       },
     ],

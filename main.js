@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
       <!-- Typing indicator container hidden by default -->
       <div id="typingIndicator" class="hidden px-4 pb-4 pt-2 bg-slate-50">
-        <div style="width:28px;height:28px;background:#002d62;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;color:white;margin-bottom:6px;">&#129302;</div>
+        <div style="width:28px;height:28px;background:#0034d3;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;color:white;margin-bottom:6px;">&#129302;</div>
         <div class="bg-white rounded-r-xl rounded-bl-xl p-3 shadow-sm inline-flex gap-1.5 border border-slate-200" style="max-width:85%; width:fit-content;">
           <div class="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce" style="animation-delay: 0ms"></div>
           <div class="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce" style="animation-delay: 150ms"></div>
@@ -275,7 +275,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (isUser) {
       div.innerHTML = "<div class=\"bg-primary text-white rounded-l-2xl rounded-tr-2xl px-4 py-2.5 text-[14.5px] shadow-sm max-w-[85%] break-words leading-relaxed font-medium\">" + html + "</div>";
     } else {
-      div.innerHTML = "<div style=\"width:30px;height:30px;background:#002d62;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;color:white;flex-shrink:0;\">&#129302;</div>\n" +
+      div.innerHTML = "<div style=\"width:30px;height:30px;background:#0034d3;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;color:white;flex-shrink:0;\">&#129302;</div>\n" +
         "<div class=\"bg-white rounded-r-2xl rounded-bl-2xl px-5 py-3.5 text-[14.5px] text-slate-800 shadow-sm border border-slate-200 shadow-[0_2px_8px_rgba(0,0,0,0.02)] max-w-[92%] leading-relaxed\">" + html + "</div>";
     }
     chatMessages.appendChild(div);

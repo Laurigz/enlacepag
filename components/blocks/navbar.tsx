@@ -7,7 +7,7 @@ import { ChevronDown, Menu, X, ArrowRight } from "lucide-react"
 const LOGO_SVG = (
   <img 
     className="h-12 w-auto object-contain mix-blend-multiply drop-shadow-sm" 
-    src="/logo.svg" 
+    src="/logo-enlace.png" 
     alt="Enlace Agencia Digital Logo" 
   />
 )
@@ -31,9 +31,6 @@ export function Navbar() {
         {/* Logo */}
         <a href="/" className="flex items-center gap-2 transition-opacity hover:opacity-90">
           {LOGO_SVG}
-          <span className="text-xl font-black tracking-tighter text-zinc-900 dark:text-zinc-50">
-            Enlace
-          </span>
         </a>
 
         {/* Desktop Navigation */}
@@ -134,3 +131,4 @@ export function Navbar() {
     </nav>
   )
 }
+

@@ -18,13 +18,12 @@ export function Hero() {
             {/* Badge */}
             <div className="flex justify-start">
               <div className="inline-flex items-center gap-2 rounded-full border border-sky-400/20 bg-white/60 px-4 py-2 backdrop-blur-md shadow-sm transition-colors hover:bg-white text-[10px] sm:text-xs font-bold uppercase tracking-wider text-slate-700">
-                Diseño Multipremiado
-                <Star className="h-4 w-4 fill-yellow-500 text-yellow-500" />
+                ⭐ AGENCIA DIGITAL INTEGRAL
               </div>
             </div>
 
             {/* Heading */}
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black tracking-tighter leading-[0.95] text-slate-900">
+            <h1 className="text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-black tracking-tighter leading-[0.95] text-slate-900">
               Diseñando<br />
               <span className="bg-gradient-to-br from-primary via-sky-500 to-sky-300 bg-clip-text text-transparent">
                 Experiencias
@@ -53,7 +52,7 @@ export function Hero() {
                 className="group inline-flex items-center justify-center gap-2 rounded-full border border-slate-300 bg-white/70 px-8 py-4 text-sm font-bold text-slate-800 backdrop-blur-md transition-colors hover:bg-white hover:border-slate-400 shadow-sm"
               >
                 <Play className="h-4 w-4" />
-                Ver Showreel
+                Ver Casos de Éxito
               </a>
             </div>
           </div>
@@ -69,14 +68,14 @@ export function Hero() {
                     <Target className="h-6 w-6 text-primary fill-current" />
                   </div>
                   <div>
-                    <div className="text-3xl font-black tracking-tight text-slate-900">150+</div>
-                    <div className="text-sm font-medium text-slate-500">Proyectos Entregados</div>
+                    <div className="text-3xl font-black tracking-tight text-slate-900">+120%</div>
+                    <div className="text-sm font-medium text-slate-500">Aumento de Tráfico Organico</div>
                   </div>
                 </div>
 
                 <div className="space-y-3 mb-8">
                   <div className="flex justify-between text-sm font-medium text-slate-600">
-                    <span>Satisfacción del Cliente</span>
+                    <span>Crecimiento SEO y Visibilidad</span>
                     <span className="text-slate-900 font-black">98%</span>
                   </div>
                   <div className="h-2 w-full overflow-hidden rounded-full bg-slate-200">
@@ -91,16 +90,16 @@ export function Hero() {
 
                 <div className="grid grid-cols-3 gap-2">
                   <div className="text-center">
-                    <div className="text-2xl font-black text-slate-900">5+</div>
-                    <div className="text-[10px] font-bold uppercase tracking-wider text-slate-500">Años</div>
+                    <div className="text-2xl font-black text-slate-900">29</div>
+                    <div className="text-[10px] font-bold uppercase tracking-wider text-slate-500">Negocios<br/>Optimizados (Nacional)</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-black text-slate-900">24/7</div>
-                    <div className="text-[10px] font-bold uppercase tracking-wider text-slate-500">Soporte</div>
+                    <div className="text-2xl font-black text-slate-900">-30%</div>
+                    <div className="text-[10px] font-bold uppercase tracking-wider text-slate-500">Tiempo<br/>Operativo (IA)</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-black text-slate-900">100%</div>
-                    <div className="text-[10px] font-bold uppercase tracking-wider text-slate-500">Calidad</div>
+                    <div className="text-2xl font-black text-slate-900">ROI+</div>
+                    <div className="text-[10px] font-bold uppercase tracking-wider text-slate-500">Estrategia<br/>Digital Integral</div>
                   </div>
                 </div>
               </div>

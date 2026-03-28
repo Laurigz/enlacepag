@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -16,7 +16,7 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: { "primary": "#002d62", "bg-light": "#f5f6f8", "bg-dark": "#101622" },
+                    colors: { "primary": "#0034d3" },
                     fontFamily: { "display": ["Inter", "sans-serif"] },
                 },
             },
@@ -40,6 +40,15 @@
 
 <body class="bg-transparent text-slate-900 min-h-screen overflow-x-hidden antialiased">
 
+    <!-- Gradient Background Blobs -->
+    <div style="position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;background:linear-gradient(60deg,#f0f4ff 0%,#f8faff 50%,#f5f0ff 100%)">
+      <div style="position:absolute;top:-5%;left:-8%;width:45%;height:45%;border-radius:50%;background:#0034d3;filter:blur(140px);opacity:0.12"></div>
+      <div style="position:absolute;top:15%;right:-5%;width:35%;height:35%;border-radius:50%;background:#99ccff;filter:blur(120px);opacity:0.25"></div>
+      <div style="position:absolute;top:50%;left:-5%;width:30%;height:30%;border-radius:50%;background:#003087;filter:blur(130px);opacity:0.08"></div>
+      <div style="position:absolute;top:60%;right:10%;width:40%;height:40%;border-radius:50%;background:#0034d3;filter:blur(150px);opacity:0.10"></div>
+      <div style="position:absolute;bottom:-10%;left:15%;width:55%;height:40%;border-radius:50%;background:linear-gradient(50deg,#0034d3,#99ccff);filter:blur(140px);opacity:0.12"></div>
+    </div>
+
     <!-- SHARED NAV (injected by navbar.js) -->
     <div id="site-nav"></div>
 
@@ -51,7 +60,7 @@
                 style="background-image: linear-gradient(rgba(16,22,34,0.4), rgba(16,22,34,0.7)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuBCfss94KeOSxTJ24Iz6PwWM0p_bzMUkhZx5JkQ1cqx751e4KtiDsUjl8KDTg7hJab1zPHKpiKa7hkt28_Y-okWY1VQI2a9Ub7jim5sMjdAGI_GZJwmiAKU0PnEERzSTc0uWQZAwRtDL7KSr_NLW7A0sK_DGJJtRP62-I2U29Gn20cy_OfLIrdyyMJOg6rag46VzIb5S4SnVALG85D2RfBrnF1lN1od1iAPw12iF0cwJcdjC9TNaXwh99NERMQ3SO6X765Ua9kqBclL');">
                 <div class="flex flex-col gap-4 text-center max-w-[800px] z-10 relative">
                     <h1
-                        class="text-slate-900 text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight drop-shadow-lg">
+                        class="text-white text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight drop-shadow-lg">
                         Sudamos la camiseta por tu marca.
                     </h1>
                 </div>
@@ -162,15 +171,11 @@
     </main>
 
     <!-- Footer -->
-    <footer class="w-full border-t border-slate-200 bg-bg-light py-12 px-4">
+    <footer class="w-full border-t border-slate-200 bg-white/50 py-12 px-4">
         <div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
             <div class="col-span-1 md:col-span-2">
                 <div class="flex items-center gap-3 text-slate-900 mb-4">
-                    <div class="size-5 text-primary"><svg fill="currentColor" viewBox="0 0 48 48"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" />
-                        </svg></div>
+                    <img src="logo-enlace.png" alt="Enlace Logo" class="h-8 w-auto object-contain" />
                     <span class="text-lg font-bold">Enlace</span>
                 </div>
                 <p class="text-slate-600 max-w-sm">Conectando marcas con personas a través del diseño y la tecnología.
@@ -199,11 +204,11 @@
 
     <script>
         document.getElementById('menuBtn')?.addEventListener('click', () => document.getElementById('mobileMenu')?.classList.toggle('hidden'));
-
     </script>
     <script src="navbar.js"></script>
     <script src="infinite-grid.js"></script>
-    <script src="footer.js"></script>`n
+    <script src="footer.js"></script>
+    <script src="/chatbot.js"></script>
 </body>
 
 </html>

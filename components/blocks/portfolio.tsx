@@ -33,10 +33,10 @@ export function Portfolio() {
     <section id="portafolio" className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-16 space-y-4">
         <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-slate-900">
-          Sudamos la camiseta por tu <span className="text-primary italic">negocio</span>
+          Más que una agencia, somos tu <span className="text-primary italic">equipo digital.</span>
         </h2>
         <p className="text-lg text-slate-600 max-w-2xl mx-auto font-medium">
-          No hacemos plantillas, hacemos estrategia visual. Nos dedicamos a entender tu marca y trabajar con vos para lograr resultados reales.
+          No hacemos plantillas, hacemos estrategia visual. Nos dedicamos a entender tu marca.
         </p>
       </div>
 

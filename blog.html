@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -16,7 +16,7 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: { "primary": "#002d62", "bg-light": "#f5f6f8", "bg-dark": "#101622" },
+                    colors: { "primary": "#0034d3" },
                     fontFamily: { "display": ["Inter", "sans-serif"] },
                 },
             },
@@ -30,6 +30,15 @@
 </head>
 
 <body class="bg-transparent text-slate-900 min-h-screen flex flex-col antialiased overflow-x-hidden">
+
+    <!-- Gradient Background Blobs -->
+    <div style="position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;background:linear-gradient(60deg,#f0f4ff 0%,#f8faff 50%,#f5f0ff 100%)">
+      <div style="position:absolute;top:-5%;left:-8%;width:45%;height:45%;border-radius:50%;background:#0034d3;filter:blur(140px);opacity:0.12"></div>
+      <div style="position:absolute;top:15%;right:-5%;width:35%;height:35%;border-radius:50%;background:#99ccff;filter:blur(120px);opacity:0.25"></div>
+      <div style="position:absolute;top:50%;left:-5%;width:30%;height:30%;border-radius:50%;background:#003087;filter:blur(130px);opacity:0.08"></div>
+      <div style="position:absolute;top:60%;right:10%;width:40%;height:40%;border-radius:50%;background:#0034d3;filter:blur(150px);opacity:0.10"></div>
+      <div style="position:absolute;bottom:-10%;left:15%;width:55%;height:40%;border-radius:50%;background:linear-gradient(50deg,#0034d3,#99ccff);filter:blur(140px);opacity:0.12"></div>
+    </div>
 
     <!-- SHARED NAV (injected by navbar.js) -->
     <div id="site-nav"></div>
@@ -56,7 +65,7 @@
                             marketing digital y cómo adaptar tu negocio.</p>
                         <button
                             class="bg-primary hover:bg-white hover:text-primary text-white px-6 py-3 rounded-lg font-bold transition-all shadow-lg flex items-center gap-2">
-                            Leer artículo completo <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            Leer artículo Completá <span class="material-symbols-outlined text-sm">arrow_forward</span>
                         </button>
                     </div>
                 </div>
@@ -312,6 +321,9 @@
     <script src="navbar.js"></script>
     <script src="infinite-grid.js"></script>
     <script src="footer.js"></script>`n
+    <script src="/chatbot.js"></script>
 </body>
 
 </html>
+
+

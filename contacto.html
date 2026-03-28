@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -17,7 +17,7 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: { "primary": "#002d62", "bg-light": "#f5f6f8" },
+                    colors: { "primary": "#0034d3" },
                     fontFamily: { "display": ["Inter", "sans-serif"] },
                 },
             },
@@ -99,7 +99,7 @@
         input:focus,
         select:focus,
         textarea:focus {
-            box-shadow: 0 0 0 3px rgba(0, 45, 98, 0.12);
+            box-shadow: 0 0 0 3px rgba(0, 52, 211, 0.12);
         }
 
         /* Success animation */
@@ -127,6 +127,17 @@
 
 <body class="bg-transparent text-slate-900 min-h-screen flex flex-col overflow-x-hidden antialiased">
 
+<body class="bg-transparent text-slate-900 min-h-screen flex flex-col overflow-x-hidden antialiased">
+
+    <!-- Gradient Background Blobs -->
+    <div style="position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;background:linear-gradient(60deg,#f0f4ff 0%,#f8faff 50%,#f5f0ff 100%)">
+      <div style="position:absolute;top:-5%;left:-8%;width:45%;height:45%;border-radius:50%;background:#0034d3;filter:blur(140px);opacity:0.12"></div>
+      <div style="position:absolute;top:15%;right:-5%;width:35%;height:35%;border-radius:50%;background:#99ccff;filter:blur(120px);opacity:0.25"></div>
+      <div style="position:absolute;top:50%;left:-5%;width:30%;height:30%;border-radius:50%;background:#003087;filter:blur(130px);opacity:0.08"></div>
+      <div style="position:absolute;top:60%;right:10%;width:40%;height:40%;border-radius:50%;background:#0034d3;filter:blur(150px);opacity:0.10"></div>
+      <div style="position:absolute;bottom:-10%;left:15%;width:55%;height:40%;border-radius:50%;background:linear-gradient(50deg,#0034d3,#99ccff);filter:blur(140px);opacity:0.12"></div>
+    </div>
+
     <!-- SHARED NAV -->
     <div id="site-nav"></div>
 
@@ -150,7 +161,7 @@
                     <div
                         class="inline-flex items-center gap-2 rounded-full border border-primary/15 bg-white/60 px-5 py-2 backdrop-blur-md shadow-sm">
                         <span class="material-symbols-outlined text-primary text-[16px]">support_agent</span>
-                        <span class="text-xs font-bold uppercase tracking-wider text-slate-700">Contáctanos</span>
+                        <span class="text-xs font-bold uppercase tracking-wider text-slate-700">CONTÁCTANOS</span>
                     </div>
                 </div>
 
@@ -190,7 +201,7 @@
                     <span class="text-[10px] uppercase tracking-wider font-bold text-slate-400 mb-1">Teléfono</span>
                     <p class="text-sm font-semibold text-slate-800">+52 55 1234 5678</p>
                 </a>
-                <a href="https://maps.google.com/?q=CDMX+Mexico" target="_blank"
+                <a href="https://maps.google.com/?q=CDMX+México" target="_blank"
                     class="glass p-5 rounded-2xl flex flex-col items-center text-center shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all group cursor-pointer">
                     <div
                         class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-3 group-hover:bg-primary/20 transition-colors">
@@ -292,7 +303,7 @@
                                     <option>Inteligencia Artificial</option>
                                     <option>Posicionamiento SEO</option>
                                     <option>Estrategia Digital</option>
-                                    <option>Pack Completo</option>
+                                    <option>Pack Completá</option>
                                 </select>
                             </div>
                             <div class="space-y-1">
@@ -397,7 +408,7 @@
                     <div class="faq-answer px-6 text-sm text-slate-600 leading-relaxed">
                         <div class="pb-4">
                             Depende del alcance. Un branding básico puede tomar <strong>1–2 semanas</strong>, un sitio
-                            web completo
+                            web Completá
                             <strong>3–6 semanas</strong>, y un proyecto integral <strong>6–10 semanas</strong>. En la
                             auditoría inicial
                             te entregamos un cronograma detallado con hitos claros.
@@ -453,7 +464,7 @@
     <footer class="bg-white/50 backdrop-blur-sm border-t border-slate-200/60 py-8 px-6">
         <div class="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="flex items-center gap-3">
-                <img class="h-8 w-auto object-contain" src="ENLACE Logo.svg" alt="Enlace Logo" />
+                <img class="h-8 w-auto object-contain" src="logo-enlace.png" alt="Enlace Logo" />
                 <span class="font-bold text-slate-700">Enlace Agencia Digital</span>
             </div>
             <div class="flex gap-6 text-sm text-slate-500">
@@ -545,6 +556,9 @@
 
     <script src="navbar.js"></script>
     <script src="infinite-grid.js"></script>
-<script src="footer.js"></script>`n</body>
+<script src="footer.js"></script>`n    <script src="/chatbot.js"></script>
+</body>
 
 </html>
+
+

@@ -35,11 +35,8 @@ export function ContactFooter() {
           <div className="flex flex-col md:flex-row justify-between w-full items-center gap-8 text-slate-500 dark:text-zinc-500 text-sm">
             <div className="flex items-center gap-3">
               <div className="h-10 w-10 flex items-center justify-center rounded-xl bg-slate-100 dark:bg-zinc-800">
-                <img src="/logo.svg" alt="Enlace Logo" className="h-6 w-6 mix-blend-multiply dark:invert" />
+                <img src="/logo-enlace.png" alt="Enlace Logo" className="h-10 w-auto mix-blend-multiply dark:invert" />
               </div>
-              <span className="font-bold text-slate-900 dark:text-zinc-100 uppercase tracking-widest text-xs">
-                Enlace Agencia Digital
-              </span>
             </div>
 
             <div className="flex gap-8">
