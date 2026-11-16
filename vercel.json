@@ -1,15 +1,5 @@
 {
   "framework": "vite",
-  "buildCommand": "vite build",
-  "outputDirectory": "dist",
-  "rewrites": [
-    { "source": "/blog", "destination": "/blog.html" },
-    { "source": "/contacto", "destination": "/contacto.html" },
-    { "source": "/nosotros", "destination": "/nosotros.html" },
-    { "source": "/portfolio", "destination": "/portfolio.html" },
-    { "source": "/servicio-branding", "destination": "/servicio-branding.html" },
-    { "source": "/servicio-ia", "destination": "/servicio-ia.html" },
-    { "source": "/servicio-posicionamiento", "destination": "/servicio-posicionamiento.html" },
-    { "source": "/servicio-web", "destination": "/servicio-web.html" }
-  ]
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist"
 }
