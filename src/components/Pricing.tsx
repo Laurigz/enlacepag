@@ -72,7 +72,8 @@ export function Pricing({ onCotizar }: { onCotizar: (s: ServicioOpcion) => void 
         <PlanCard plan={PLANES.mantenimiento} onCotizar={onCotizar} />
       </div>
       <p className="mt-6 text-sm text-body">
-        Branding, posicionamiento en Google Maps y chatbot se cotizan aparte, según el alcance de cada proyecto.
+        El precio de la landing incluye la vinculación del dominio y del hosting, no su costo. Branding, posicionamiento en
+        Google Maps y chatbot se cotizan aparte, según el alcance de cada proyecto.
       </p>
     </Section>
   )

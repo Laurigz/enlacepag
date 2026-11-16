@@ -201,6 +201,10 @@ export const FAQS = [
     a: "Cuesta $25.000 por mes y la contratación mínima es de 3 meses. Incluye soporte técnico, actualizaciones de contenido, monitoreo de funcionamiento y ajustes menores.",
   },
   {
+    q: "¿El precio incluye dominio y hosting?",
+    a: "No. Incluye la vinculación: conectamos tu dominio y tu hosting con la web. El costo del dominio y del hosting va aparte.",
+  },
+  {
     q: "¿Trabajan con clientes fuera de mi ciudad?",
     a: "Sí. Trabajamos con clientes de toda Argentina y todo el proceso se hace a distancia.",
   },
