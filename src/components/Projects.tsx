@@ -1,5 +1,6 @@
 import { ArrowUpRight } from "lucide-react"
 import { PROYECTOS } from "../data/content"
+import { track } from "../lib/analytics"
 import { Section } from "./Section"
 
 export function Projects() {
@@ -24,6 +25,8 @@ export function Projects() {
               <div className="overflow-hidden">
                 <img
                   src={p.image}
+                  srcSet={`${p.image.replace(".webp", "-480.webp")} 480w, ${p.image} 960w`}
+                  sizes="(min-width: 1024px) 380px, (min-width: 768px) 50vw, 100vw"
                   alt={`Captura de la portada de ${p.name}`}
                   width={960}
                   height={600}
@@ -45,6 +48,7 @@ export function Projects() {
                   href={p.url}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => track("select_content", { content_type: "demo", content_id: p.name })}
                   className="mt-6 inline-flex items-center gap-1.5 self-start text-sm font-semibold text-cobalt after:absolute after:inset-0 after:content-['']"
                 >
                   Ver demo<span className="sr-only"> de {p.name} (se abre en una pestaña nueva)</span>

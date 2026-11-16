@@ -1,4 +1,5 @@
 import { PASOS } from "../data/content"
+import { CtaRow } from "./CtaRow"
 import { Section } from "./Section"
 
 export function Process() {
@@ -23,6 +24,7 @@ export function Process() {
           </li>
         ))}
       </ol>
+      <CtaRow text="¿Tenés un proyecto en mente? El primer paso es contarnos qué necesitás." />
     </Section>
   )
 }

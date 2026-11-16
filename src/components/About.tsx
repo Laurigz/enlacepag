@@ -11,7 +11,7 @@ export function About() {
     >
       <div className="grid gap-12 lg:grid-cols-12 lg:gap-8">
         <div className="lg:col-span-3" aria-hidden="true">
-          <img src="/logo-enlace-mark.png" alt="" width={537} height={334} className="h-auto w-28 opacity-90 lg:w-32" />
+          <img src="/logo-enlace-mark.webp" alt="" width={256} height={159} loading="lazy" decoding="async" className="h-auto w-28 opacity-90 lg:w-32" />
         </div>
         <div className="lg:col-span-9">
           <p className="max-w-3xl text-2xl font-semibold leading-snug tracking-[-0.015em] text-ink sm:text-[1.85rem]">

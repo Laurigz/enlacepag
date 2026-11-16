@@ -105,3 +105,31 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Páginas legales */
+@layer components {
+  .legal > * + * {
+    @apply mt-5;
+  }
+
+  .legal h2 {
+    @apply !mt-12 text-xl font-extrabold tracking-[-0.015em] text-ink sm:text-2xl;
+  }
+
+  .legal {
+    overflow-wrap: break-word;
+  }
+
+  .legal p,
+  .legal li {
+    @apply text-base leading-relaxed text-body sm:text-[17px];
+  }
+
+  .legal ul {
+    @apply list-disc space-y-2 pl-5 marker:text-cobalt;
+  }
+
+  .legal a:not(.btn) {
+    @apply font-semibold text-cobalt underline underline-offset-2;
+  }
+}

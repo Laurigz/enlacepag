@@ -2,6 +2,7 @@ import { useId, useState } from "react"
 import { Plus } from "lucide-react"
 import { FAQS } from "../data/content"
 import { Section } from "./Section"
+import { CtaRow } from "./CtaRow"
 
 export function Faq() {
   const [open, setOpen] = useState<number | null>(null)
@@ -53,6 +54,7 @@ export function Faq() {
             )
           })}
         </ul>
+        <CtaRow text="¿Te quedó otra duda? Escribila en el formulario y te respondemos." />
       </div>
     </Section>
   )

@@ -37,7 +37,7 @@ export function Header() {
       }`}
     >
       <Container className="flex h-16 items-center justify-between gap-6">
-        <a href="#inicio" aria-label="EnlaceStudio, volver al inicio" className="shrink-0" onClick={close}>
+        <a href="/#inicio" aria-label="EnlaceStudio, volver al inicio" className="shrink-0" onClick={close}>
           <Logo />
         </a>
 
@@ -46,7 +46,7 @@ export function Header() {
             {NAV.map((item) => (
               <li key={item.id}>
                 <a
-                  href={`#${item.id}`}
+                  href={`/#${item.id}`}
                   className="rounded-md px-3 py-2 text-sm font-medium text-body transition-colors duration-200 hover:text-ink"
                 >
                   <span className="tnum mr-1 text-cobalt">{item.n}.</span>
@@ -58,7 +58,7 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <a href="#contacto" className="btn btn-primary hidden min-h-[42px] px-5 text-sm sm:inline-flex">
+          <a href="/#contacto" className="btn btn-primary hidden min-h-[42px] px-5 text-sm sm:inline-flex">
             Cotizar proyecto
           </a>
           <button
@@ -81,7 +81,7 @@ export function Header() {
               <ul className="divide-y divide-ink/10">
                 {NAV.map((item) => (
                   <li key={item.id}>
-                    <a href={`#${item.id}`} onClick={close} className="flex py-3.5 text-base font-semibold text-ink">
+                    <a href={`/#${item.id}`} onClick={close} className="flex py-3.5 text-base font-semibold text-ink">
                       <span className="tnum mr-3 w-6 text-cobalt">{item.n}</span>
                       {item.label}
                     </a>
@@ -89,7 +89,7 @@ export function Header() {
                 ))}
               </ul>
             </nav>
-            <a href="#contacto" onClick={close} className="btn btn-primary mt-4 w-full">
+            <a href="/#contacto" onClick={close} className="btn btn-primary mt-4 w-full">
               Cotizar proyecto
             </a>
           </Container>

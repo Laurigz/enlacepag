@@ -213,8 +213,3 @@ export const FAQS = [
     a: "Sí. Branding, Google Maps y chatbot se pueden sumar en cualquier momento, antes o después de publicar la landing. Se cotizan según el alcance.",
   },
 ]
-
-export const INSTAGRAM = {
-  handle: "@enlacepage",
-  url: "https://www.instagram.com/enlacepage/",
-}

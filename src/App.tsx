@@ -1,40 +1,46 @@
-import { useState } from "react"
-import { SERVICIOS_OPCIONES, type ServicioOpcion } from "./data/content"
-import { Header } from "./components/Header"
-import { Hero } from "./components/Hero"
-import { Services } from "./components/Services"
-import { Projects } from "./components/Projects"
-import { Process } from "./components/Process"
-import { Pricing } from "./components/Pricing"
-import { About } from "./components/About"
-import { Faq } from "./components/Faq"
-import { Contact } from "./components/Contact"
-import { Footer } from "./components/Footer"
+import { useEffect } from "react"
+import { ROUTES } from "./config/site"
+import { applyAnalyticsConsent } from "./lib/analytics"
+import { useConsent } from "./lib/consent"
+import { CookieBanner } from "./components/CookieBanner"
+import { Home } from "./pages/Home"
+import { AvisoLegal } from "./pages/AvisoLegal"
+import { PoliticaPrivacidad } from "./pages/PoliticaPrivacidad"
+import { PoliticaCookies } from "./pages/PoliticaCookies"
+import { NotFound } from "./pages/NotFound"
+
+const PAGES: Record<string, () => JSX.Element> = {
+  [ROUTES.home]: Home,
+  [ROUTES.avisoLegal]: AvisoLegal,
+  [ROUTES.privacidad]: PoliticaPrivacidad,
+  [ROUTES.cookies]: PoliticaCookies,
+}
+
+function currentPath() {
+  const p = window.location.pathname.replace(/\/+$/, "").replace(/\.html$/, "")
+  return p === "" || p === "/index" ? "/" : p
+}
 
 export default function App() {
-  // El servicio elegido en Servicios o Inversión llega preseleccionado al formulario.
-  const [servicio, setServicio] = useState<ServicioOpcion>(SERVICIOS_OPCIONES[0])
+  const path = currentPath()
+  const Page = PAGES[path]
+  const { consent } = useConsent()
+
+  // GA4 se activa o desactiva según la elección del banner.
+  useEffect(() => {
+    applyAnalyticsConsent(consent?.analytics === true)
+  }, [consent])
 
   return (
     <>
       <a
         href="#contenido"
-        className="sr-only z-[60] rounded-lg bg-cobalt px-4 py-3 font-semibold text-white focus:not-sr-only focus:fixed focus:left-4 focus:top-4"
+        className="sr-only z-[80] rounded-lg bg-cobalt px-4 py-3 font-semibold text-white focus:not-sr-only focus:fixed focus:left-4 focus:top-4"
       >
         Saltar al contenido
       </a>
-      <Header />
-      <main id="contenido">
-        <Hero />
-        <Services onCotizar={setServicio} />
-        <Projects />
-        <Process />
-        <Pricing onCotizar={setServicio} />
-        <About />
-        <Faq />
-        <Contact servicio={servicio} onServicioChange={setServicio} />
-      </main>
-      <Footer />
+      {Page ? <Page /> : <NotFound path={path} />}
+      <CookieBanner />
     </>
   )
 }

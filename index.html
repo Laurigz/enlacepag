@@ -3,31 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EnlaceStudio | Diseño y Desarrollo de Landing Pages</title>
+    <title>EnlaceStudio | Diseño y Desarrollo de Landing Pages en Argentina</title>
     <meta
       name="description"
-      content="Diseñamos y desarrollamos landing pages para industrias, comercios y estudios profesionales de toda Argentina. $220.000 pago único. Entrega en 2 a 4 semanas."
+      content="Landing pages para industrias, comercios y estudios profesionales de toda Argentina. Pago único de $220.000 y entrega en 2 a 4 semanas."
     />
     <meta name="theme-color" content="#F7F5EE" />
+    <meta name="format-detection" content="telephone=no" />
+
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="es_AR" />
     <meta property="og:site_name" content="EnlaceStudio" />
-    <meta property="og:title" content="EnlaceStudio | Diseño y Desarrollo de Landing Pages" />
+    <meta property="og:title" content="EnlaceStudio | Diseño y Desarrollo de Landing Pages en Argentina" />
     <meta
       property="og:description"
-      content="Landing pages para industrias, comercios y estudios profesionales de toda Argentina."
+      content="Landing pages para industrias, comercios y estudios profesionales de toda Argentina. Pago único de $220.000 y entrega en 2 a 4 semanas."
     />
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="EnlaceStudio: landing pages que convierten visitas en clientes" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="EnlaceStudio | Diseño y Desarrollo de Landing Pages en Argentina" />
+    <meta
+      name="twitter:description"
+      content="Landing pages para industrias, comercios y estudios profesionales de toda Argentina. Pago único de $220.000 y entrega en 2 a 4 semanas."
+    />
+    <!-- canonical, og:url, og:image, twitter:image y JSON-LD los inserta vite.config.ts desde src/config/site.ts -->
+
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
+      as="style"
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      />
+    </noscript>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <p style="padding:24px;font-family:system-ui,sans-serif;color:#042A4F">
+        EnlaceStudio diseña landing pages para industrias, comercios y estudios profesionales de toda Argentina.
+        Activá JavaScript para ver el sitio.
+      </p>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
